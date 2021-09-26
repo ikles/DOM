@@ -110,7 +110,7 @@ $('.accordion-header').toggleClass('inactive-header');
      infinite: true,
      speed: 300,
      slidesToShow: 1     
-   });
+   }); 
   }
 
 /*
