@@ -6,9 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Главная</title>  
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;300;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="css/main.css">
+  @@include('var/_styless.html')
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -19,172 +17,8 @@
 <body>
 
   <div class="wrapper">
-    <header class="header">
-      <div class="top">
-        <div class="contain">
-          <div class="top-w">
-            <a href="#" class="logo"><img src="img/logo.png" /></a>
-            <a href="#" class="top-calc">
-              <div class="top-calc-l"><span class="top-calc-txt-1">калькулятор</span><span class="top-calc-txt-2">стоимости дома</span></div>
-              <div class="top-calc-r"><img src="img/calc.png" /></div>
-            </a>
-            <div class="top-col-2">
-              <div class="top-conts-b">
-                <div class="top-conts-txts">
-                  <a href="tel:+74951527602" class="top-conts-txt-2">+7 (495) 152 76 02</a>
-                  <div class="top-conts-txt-1">Телефон (круглосуточно)</div>
-                </div>
-                <a href="tel:+74951527602" class="mob-cont-img-w"><img src="img/phone.png" /></a>
-              </div>
-            </div>
-
-            <div class="top-col-4"><a href="" class="btn">Заказать звонок</a></div>
-            <div class="top-actions">
-              <a href="#" class="top-action"><img src="img/search.png" /></a>
-              <a href="#" class="top-action"><img src="img/user.png" /></a>
-              <a href="#" class="top-action"><img src="img/heart_red.png" /></a>
-            </div>
-          </div>
-        </div>
-      </div>    
-      <div class="top-mnu-row">
-        <div class="contain">
-          <div class="top-mnu-w">
-            <div class="col-mnu">
-              <div class="hidden-mnu cpadding">
-                <a href="#" class="toggle-mnu"><span></span></a>
-              </div>
-              <ul class="top-mnu cpadding">
-                <li class="parent act">
-                  <a href="#">Каталог<span class="a-after"></span></a>
-                  <div class="top-open">
-                    <div class="top-open-row row20">
-                      <div class="top-open-col col-33">
-                        <div class="top-open-item">
-                          <div class="top-open-tit">По Технологии</div>
-                          <ul class="top-open-mnu">
-                            <li><a href="#">Каракасные дома</a></li>
-                            <li><a href="#">Каменные дома</a></li>
-                            <li><a href="#">Дома из СИП-панелей</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="top-open-col col-33">
-                        <div class="top-open-item">
-                          <div class="top-open-tit">По метражу</div>
-                          <ul class="top-open-mnu">
-                            <li><a href="#">до 100 м2</a></li>
-                            <li><a href="#">от 100 м2 до 150 м2</a></li>
-                            <li><a href="#">от 150 м2 до 200 м2</a></li>
-                            <li><a href="#">от 200 м2</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="top-open-col col-33">
-                        <div class="top-open-item">
-                          <div class="top-open-tit">По этажности</div>
-                          <ul class="top-open-mnu">
-                            <li><a href="#">Одноэтажные</a></li>
-                            <li><a href="#">Одноэтажные с мансардой</a></li>
-                            <li><a href="#">Двухэтажные</a></li>
-                            <li><a href="#">Трехэтажные</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!--top-open-->
-                </li>
-                <li class="parent">
-                  <a href="#">Готовые дома<span class="a-after"></span></a>                  
-                  <div class="top-open">
-                    <div class="top-open-row row20">
-                      <div class="top-open-col col-33">
-                        <div class="top-open-item">
-                          <div class="top-open-tit">По Технологии</div>
-                          <ul class="top-open-mnu">
-                            <li><a href="#">Каракасные дома</a></li>
-                            <li><a href="#">Каменные дома</a></li>
-                            <li><a href="#">Дома из СИП-панелей</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="top-open-col col-33">
-                        <div class="top-open-item">
-                          <div class="top-open-tit">По метражу</div>
-                          <ul class="top-open-mnu">
-                            <li><a href="#">до 100 м2</a></li>
-                            <li><a href="#">от 100 м2 до 150 м2</a></li>
-                            <li><a href="#">от 150 м2 до 200 м2</a></li>
-                            <li><a href="#">от 200 м2</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="top-open-col col-33">
-                        <div class="top-open-item">
-                          <div class="top-open-tit">По этажности</div>
-                          <ul class="top-open-mnu">
-                            <li><a href="#">Одноэтажные</a></li>
-                            <li><a href="#">Одноэтажные с мансардой</a></li>
-                            <li><a href="#">Двухэтажные</a></li>
-                            <li><a href="#">Трехэтажные</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!--top-open-->
-                </li>
-                <li class="parent">
-                  <a href="#">Акции<span class="a-after"></span></a>
-                  <div class="top-open">
-                    <div class="top-open-row row20">
-                      <div class="top-open-col col-33">
-                        <div class="top-open-item">
-                          <div class="top-open-tit">По Технологии</div>
-                          <ul class="top-open-mnu">
-                            <li><a href="#">Каракасные дома</a></li>
-                            <li><a href="#">Каменные дома</a></li>
-                            <li><a href="#">Дома из СИП-панелей</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="top-open-col col-33">
-                        <div class="top-open-item">
-                          <div class="top-open-tit">По метражу</div>
-                          <ul class="top-open-mnu">
-                            <li><a href="#">до 100 м2</a></li>
-                            <li><a href="#">от 100 м2 до 150 м2</a></li>
-                            <li><a href="#">от 150 м2 до 200 м2</a></li>
-                            <li><a href="#">от 200 м2</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="top-open-col col-33">
-                        <div class="top-open-item">
-                          <div class="top-open-tit">По этажности</div>
-                          <ul class="top-open-mnu">
-                            <li><a href="#">Одноэтажные</a></li>
-                            <li><a href="#">Одноэтажные с мансардой</a></li>
-                            <li><a href="#">Двухэтажные</a></li>
-                            <li><a href="#">Трехэтажные</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!--top-open-->
-                </li>
-                <li><a href="#">О компании</a></li>
-                <li><a href="#">отзывы</a></li>
-                <li><a href="#">кредит</a></li>
-                <li><a href="#">контакты</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>    
+    @@include('var/_header.html')  
     <main class="main">
-
-
       <div class="sl">
         <div class="sl-it">
           <img src="img/bg_sl.jpg" alt="">
@@ -275,7 +109,7 @@
         </div>
       </div><!--adv-->
 
-      <div class="catalog">
+      <section class="catalog section">
         <div class="contain">
           <h2 class="center">Каталог проектов</h2>
           <div class="catalog-w">
@@ -358,11 +192,15 @@
                    <div class="filter-item">
                     <div class="filter-tit">Площадь, м2</div>
                     <div class="form__line">
-                      <div class="price">
-                        <div class="price__range"></div>
+                      <div class="price">                        
                         <div class="price__inputs">
                           <input id="price-start" type="text" class="input-2" autocomplete="off">
                           <input id="price-end" type="text" class="input-2" autocomplete="off">
+                          <div class="price__range price__range--1"></div>
+                        </div>
+                        <div class="price__captions">
+                          <div class="price__caption">от 10</div>
+                          <div class="price__caption">до 500</div>
                         </div>
                       </div>
                     </div><!--form__line-->
@@ -536,167 +374,498 @@
                 </div>
                 <div class="filter-col filter-col-3">
 
-                  <div class="filter-item">
-                    <div class="filter-tit">Стиль</div>
-                    <label class="filter-label">
-                      <input class="filter-check" type="checkbox">
-                      <span class="filter-check-span"></span>
-                      <span class="filter-label-txt">Барнхаус</span>
-                    </label>
-                    <label class="filter-label">
-                      <input class="filter-check" type="checkbox">
-                      <span class="filter-check-span"></span>
-                      <span class="filter-label-txt">Классический</span>
-                    </label>
-                    <label class="filter-label">
-                      <input class="filter-check" type="checkbox">
-                      <span class="filter-check-span"></span>
-                      <span class="filter-label-txt">Шале</span>
-                    </label>
-                    <label class="filter-label">
-                      <input class="filter-check" type="checkbox">
-                      <span class="filter-check-span"></span>
-                      <span class="filter-label-txt">Модерн</span>
-                    </label>
-                    <label class="filter-label">
-                      <input class="filter-check" type="checkbox">
-                      <span class="filter-check-span"></span>
-                      <span class="filter-label-txt">Современный</span>
-                    </label>
-                    <label class="filter-label">
-                      <input class="filter-check" type="checkbox">
-                      <span class="filter-check-span"></span>
-                      <span class="filter-label-txt">Европейский</span>
-                    </label>
-                    <label class="filter-label">
-                      <input class="filter-check" type="checkbox">
-                      <span class="filter-check-span"></span>
-                      <span class="filter-label-txt">Минимализм</span>
-                    </label>
-                    <label class="filter-label">
-                      <input class="filter-check" type="checkbox">
-                      <span class="filter-check-span"></span>
-                      <span class="filter-label-txt">Фахверк</span>
-                    </label>
-                    <label class="filter-label">
-                      <input class="filter-check" type="checkbox">
-                      <span class="filter-check-span"></span>
-                      <span class="filter-label-txt">Хай-тек</span>
-                    </label>
-                  </div>
 
+                 <div class="filter-item">
+                  <div class="filter-tit">Базовая стоимость, <span>₽</span></div>
+                  <div class="form__line">
+                    <div class="price">
+                      <div class="price__inputs">
+                        <input id="price-start2" type="text" class="input-2" autocomplete="off">
+                        <input id="price-end2" type="text" class="input-2" autocomplete="off">
+                        <div class="price__range price__range--2"></div>
+                      </div>
+                      <div class="price__captions">
+                        <div class="price__caption">от 1 800 000</div>
+                        <div class="price__caption">до 22 800 000</div>
+                      </div>
+                    </div>
+                  </div><!--form__line-->
                 </div>
-                <div class="filter-col filter-col-4">
 
-                  <div class="filter-item">
-                    <div class="filter-tit">Количество санузлов</div>
-                    <div class="filter-2-labels">
-                      <label class="filter-2-label">
-                        <input class="filter-2-check" type="checkbox">
-                        <span class="filter-2-check-span">1</span>                      
-                      </label>
-                      <label class="filter-2-label">
-                        <input class="filter-2-check" type="checkbox">
-                        <span class="filter-2-check-span">2</span>                      
-                      </label>
-                      <label class="filter-2-label">
-                        <input class="filter-2-check" type="checkbox">
-                        <span class="filter-2-check-span">3</span>                      
-                      </label>
-                      <label class="filter-2-label">
-                        <input class="filter-2-check" type="checkbox">
-                        <span class="filter-2-check-span">4</span>                      
-                      </label>
-                    </div><!--filter-2-labels-->                    
-                  </div>
-
-                  <div class="filter-item">
-                    <div class="filter-tit">Дополнительные параметры</div>
-                    <label class="filter-label">
-                      <input class="filter-check" type="checkbox">
-                      <span class="filter-check-span"></span>
-                      <span class="filter-label-txt">Второй свет</span>
-                    </label>
-                    <label class="filter-label">
-                      <input class="filter-check" type="checkbox">
-                      <span class="filter-check-span"></span>
-                      <span class="filter-label-txt">Эркер</span>
-                    </label>
-                    <label class="filter-label">
-                      <input class="filter-check" type="checkbox">
-                      <span class="filter-check-span"></span>
-                      <span class="filter-label-txt">Балкон</span>
-                    </label>
-                    <label class="filter-label">
-                      <input class="filter-check" type="checkbox">
-                      <span class="filter-check-span"></span>
-                      <span class="filter-label-txt">Терраса/Веранда</span>
-                    </label>
-                    <label class="filter-label">
-                      <input class="filter-check" type="checkbox">
-                      <span class="filter-check-span"></span>
-                      <span class="filter-label-txt">Навес</span>
-                    </label>
-                    <label class="filter-label">
-                      <input class="filter-check" type="checkbox">
-                      <span class="filter-check-span"></span>
-                      <span class="filter-label-txt">Гараж</span>
-                    </label>
-                    <label class="filter-label">
-                      <input class="filter-check" type="checkbox">
-                      <span class="filter-check-span"></span>
-                      <span class="filter-label-txt">Котельная</span>
-                    </label>
-                    <label class="filter-label">
-                      <input class="filter-check" type="checkbox">
-                      <span class="filter-check-span"></span>
-                      <span class="filter-label-txt">Сауна</span>
-                    </label>
-                    <label class="filter-label">
-                      <input class="filter-check" type="checkbox">
-                      <span class="filter-check-span"></span>
-                      <span class="filter-label-txt">Дуплекс</span>
-                    </label>
-                    <label class="filter-label">
-                      <input class="filter-check" type="checkbox">
-                      <span class="filter-check-span"></span>
-                      <span class="filter-label-txt">Панорамное остекление</span>
-                    </label>
-                  </div>
-
+                <div class="filter-item">
+                  <div class="filter-tit">Стиль</div>
+                  <label class="filter-label">
+                    <input class="filter-check" type="checkbox">
+                    <span class="filter-check-span"></span>
+                    <span class="filter-label-txt">Барнхаус</span>
+                  </label>
+                  <label class="filter-label">
+                    <input class="filter-check" type="checkbox">
+                    <span class="filter-check-span"></span>
+                    <span class="filter-label-txt">Классический</span>
+                  </label>
+                  <label class="filter-label">
+                    <input class="filter-check" type="checkbox">
+                    <span class="filter-check-span"></span>
+                    <span class="filter-label-txt">Шале</span>
+                  </label>
+                  <label class="filter-label">
+                    <input class="filter-check" type="checkbox">
+                    <span class="filter-check-span"></span>
+                    <span class="filter-label-txt">Модерн</span>
+                  </label>
+                  <label class="filter-label">
+                    <input class="filter-check" type="checkbox">
+                    <span class="filter-check-span"></span>
+                    <span class="filter-label-txt">Современный</span>
+                  </label>
+                  <label class="filter-label">
+                    <input class="filter-check" type="checkbox">
+                    <span class="filter-check-span"></span>
+                    <span class="filter-label-txt">Европейский</span>
+                  </label>
+                  <label class="filter-label">
+                    <input class="filter-check" type="checkbox">
+                    <span class="filter-check-span"></span>
+                    <span class="filter-label-txt">Минимализм</span>
+                  </label>
+                  <label class="filter-label">
+                    <input class="filter-check" type="checkbox">
+                    <span class="filter-check-span"></span>
+                    <span class="filter-label-txt">Фахверк</span>
+                  </label>
+                  <label class="filter-label">
+                    <input class="filter-check" type="checkbox">
+                    <span class="filter-check-span"></span>
+                    <span class="filter-label-txt">Хай-тек</span>
+                  </label>
                 </div>
-              </div><!--filter-row-->
-            </div>
-            <div class="filter-buttons">
-              <a href="#" class="filter-btn-hide btn-o"><span>Свернуть фильтр</span><i></i></a>
-              <button class="filter-btn btn">Показать 34 проекта</button>
-            </div>
-          </form>
-        </div><!--filter-->
-      </div><!--contain-->
-    </div><!--catalog-->
+
+              </div>
+              <div class="filter-col filter-col-4">
+
+                <div class="filter-item">
+                  <div class="filter-tit">Количество санузлов</div>
+                  <div class="filter-2-labels">
+                    <label class="filter-2-label">
+                      <input class="filter-2-check" type="checkbox">
+                      <span class="filter-2-check-span">1</span>                      
+                    </label>
+                    <label class="filter-2-label">
+                      <input class="filter-2-check" type="checkbox">
+                      <span class="filter-2-check-span">2</span>                      
+                    </label>
+                    <label class="filter-2-label">
+                      <input class="filter-2-check" type="checkbox">
+                      <span class="filter-2-check-span">3</span>                      
+                    </label>
+                    <label class="filter-2-label">
+                      <input class="filter-2-check" type="checkbox">
+                      <span class="filter-2-check-span">4</span>                      
+                    </label>
+                  </div><!--filter-2-labels-->                    
+                </div>
+
+                <div class="filter-item">
+                  <div class="filter-tit">Дополнительные параметры</div>
+                  <label class="filter-label">
+                    <input class="filter-check" type="checkbox">
+                    <span class="filter-check-span"></span>
+                    <span class="filter-label-txt">Второй свет</span>
+                  </label>
+                  <label class="filter-label">
+                    <input class="filter-check" type="checkbox">
+                    <span class="filter-check-span"></span>
+                    <span class="filter-label-txt">Эркер</span>
+                  </label>
+                  <label class="filter-label">
+                    <input class="filter-check" type="checkbox">
+                    <span class="filter-check-span"></span>
+                    <span class="filter-label-txt">Балкон</span>
+                  </label>
+                  <label class="filter-label">
+                    <input class="filter-check" type="checkbox">
+                    <span class="filter-check-span"></span>
+                    <span class="filter-label-txt">Терраса/Веранда</span>
+                  </label>
+                  <label class="filter-label">
+                    <input class="filter-check" type="checkbox">
+                    <span class="filter-check-span"></span>
+                    <span class="filter-label-txt">Навес</span>
+                  </label>
+                  <label class="filter-label">
+                    <input class="filter-check" type="checkbox">
+                    <span class="filter-check-span"></span>
+                    <span class="filter-label-txt">Гараж</span>
+                  </label>
+                  <label class="filter-label">
+                    <input class="filter-check" type="checkbox">
+                    <span class="filter-check-span"></span>
+                    <span class="filter-label-txt">Котельная</span>
+                  </label>
+                  <label class="filter-label">
+                    <input class="filter-check" type="checkbox">
+                    <span class="filter-check-span"></span>
+                    <span class="filter-label-txt">Сауна</span>
+                  </label>
+                  <label class="filter-label">
+                    <input class="filter-check" type="checkbox">
+                    <span class="filter-check-span"></span>
+                    <span class="filter-label-txt">Дуплекс</span>
+                  </label>
+                  <label class="filter-label">
+                    <input class="filter-check" type="checkbox">
+                    <span class="filter-check-span"></span>
+                    <span class="filter-label-txt">Панорамное остекление</span>
+                  </label>
+                </div>
+              </div>
+            </div><!--filter-row-->
+          </div>
+          <div class="filter-buttons">
+            <a href="#" class="filter-btn-hide btn-o"><span>Свернуть фильтр</span><i></i></a>
+            <a href="#" class="filter-btn btn">Показать 34 проекта</a>
+          </div>
+        </form>
+      </div><!--filter-->
+    </div><!--contain-->
+  </section><!--catalog-->
 
 
 
-    <div class="popular">
-      <div class="contain">
-        <h2 class="center">Популярные проекты домов</h2>
-
+  <div class="popular">
+    <div class="contain">
+      <h2 class="center">Популярные проекты домов</h2>
+      <div class="popular-row teasers-row row10">
+        <div class="popular-col teasers-col col-25">
+          @@include('var/_teaser-it.html',{
+            "img":"teaser-1",
+            "square":"108 м²",
+            "places":"2",
+            "views":"9 124",
+            "sort":"СИП-дом",
+            "name":"Дарина",
+            "oldprice":"6 355 000",
+            "price":"3 022 000"
+          })
+        </div><!--popular-col teasers-col-->
+        <div class="popular-col teasers-col col-25">
+          @@include('var/_teaser-it.html',{
+            "img":"teaser-2",
+            "square":"125 м²",
+            "places":"2",
+            "views":"9 124",
+            "sort":"каменный дом",
+            "name":"«Астрид»",
+            "oldprice":"6 355 000",
+            "price":"3 500 000"
+          })
+        </div><!--popular-col teasers-col-->
+        <div class="popular-col teasers-col col-25">
+          @@include('var/_teaser-it.html',{
+            "img":"teaser-3",
+            "square":"125 м²",
+            "places":"2",
+            "views":"9 124",
+            "sort":"каменный дом",
+            "name":"«Астрид»",
+            "oldprice":"6 355 000",
+            "price":"3 500 000"
+          })
+        </div><!--popular-col teasers-col-->
+        <div class="popular-col teasers-col col-25">
+          @@include('var/_teaser-it.html',{
+            "img":"teaser-4",
+            "square":"125 м²",
+            "places":"2",
+            "views":"9 124",
+            "sort":"каменный дом",
+            "name":"«Астрид»",
+            "oldprice":"6 355 000",
+            "price":"3 500 000"
+          })
+        </div><!--popular-col teasers-col-->
+        <div class="popular-col teasers-col col-25">
+          @@include('var/_teaser-it.html',{
+            "img":"teaser-5",
+            "square":"125 м²",
+            "places":"2",
+            "views":"9 124",
+            "sort":"каменный дом",
+            "name":"«Астрид»",
+            "oldprice":"6 355 000",
+            "price":"3 500 000"
+          })
+        </div><!--popular-col teasers-col-->
+        <div class="popular-col teasers-col col-25">
+          @@include('var/_teaser-it.html',{
+            "img":"teaser-6",
+            "square":"125 м²",
+            "places":"2",
+            "views":"9 124",
+            "sort":"каменный дом",
+            "name":"«Астрид»",
+            "oldprice":"6 355 000",
+            "price":"3 500 000"
+          })
+        </div><!--popular-col teasers-col-->
+        <div class="popular-col teasers-col col-25">
+          @@include('var/_teaser-it.html',{
+            "img":"teaser-7",
+            "square":"125 м²",
+            "places":"2",
+            "views":"9 124",
+            "sort":"каменный дом",
+            "name":"«Астрид»",
+            "oldprice":"6 355 000",
+            "price":"3 500 000"
+          })
+        </div><!--popular-col teasers-col-->
+        <div class="popular-col teasers-col col-25">
+          @@include('var/_teaser-it.html',{
+            "img":"teaser-8",
+            "square":"125 м²",
+            "places":"2",
+            "views":"9 124",
+            "sort":"каменный дом",
+            "name":"«Астрид»",
+            "oldprice":"6 355 000",
+            "price":"3 500 000"
+          })
+        </div><!--popular-col teasers-col-->
+      </div><!--popular-row-->
+      <div class="popular-btn-w">
+        <a href="#" class="btn popular-btn w229">Все проекты</a>
       </div>
-    </div><!--popular-->
+    </div>
+  </div><!--popular-->
+
+  <section class="ind section">
+    <div class="contain">
+      <div class="ind-w">
+        <div class="ind-txt-1">Индивидуальное проектирование!</div>
+        <div class="ind-txt-2">Архитекторы компании "Дома№1" создадут для Вас индивидуальный проект согласно вашим пожеланиям</div>
+        <a href="#" class="ind-btn btn w229">Записаться к архитектору</a>
+      </div>
+    </div>
+  </section><!--ind-->
 
 
 
-  </main>
-  <footer class="footer">      
-  </footer>
-  <div class="overlay"></div>
+  <section class="section info">
+    <div class="contain">
+      <div class="info-w">
+        <div class="info-col-1-w">
+          <div class="info-col-it">
+            <div class="info-col-1-it-w">
+              <div class="info-col-h-w-1"><div class="info-col-h">видео с наших стройплощадок</div></div>
+              <div class="info-col-1-cont">
+                <a href="#" class="info-col-1-img-w"><img src="img/info_1.jpg" />
+                  <span class="info-col-1-img-a"></span>
+                </a>
+                <div class="info-col-1-txt-1">
+                  Только у нас вы можете<br />
+                  онлайн следить<br />
+                  за стройкой Вашего дома!
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="info-col-it">
+            <div class="info-col-1-it-w">
+              <div class="info-col-h-w-1"><div class="info-col-h">отзывы</div></div>
+              <div class="info-col-1-cont">
+                <a href="#" class="info-col-1-img-w"><img src="img/info_2.jpg" /></a>
+                <div class="info-col-1-it-txt-w">
+                  <div class="info-col-txt-row">
+                    <div class="info-col-1-txt-2">05.05.2021</div>
+                    <a href="#" class="info-col-1-txt-3">Ирина</a>
+                  </div>
+                  <div class="info-col-1-txt-4">Спасибо менеджеру Сергею Богатикову и всем причастным к нашему строительству за помощь в реализации дома, о котором мы мечтали столько лет!</div>
+                </div>
+                <a href="#" class="info-col-1-it-a">Отзывы наших клиентов</a>
+              </div>
+            </div>
+          </div>
+          <div class="info-col-it">
+            <div class="info-col-1-it-w">
+              <div class="info-col-1-cont">
+                <a href="#" class="info-col-1-img-w"><img src="img/info_3.jpg" /></a>
+                <div class="info-col-h-w-2">
+                  <a href="#" class="info-col-h info-col-h-1">
+                    Выгодный кредит<br />
+                    от 9,5% годовых<br />
+                    и материнский капитал
+                  </a>
+                </div>
+                <a href="#" class="info-col-1-it-a">Об ипотеке</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info-col-2">
+          <div class="info-col-2-w">
+            <div class="info-col-2-p-w">
+              <p>
+                Компания «Дома №1» была основана в 2015 году и прошла путь от небольшой бригады строителей до полноценной компании по строительству загородных домов, которая продолжает расти и развиваться.
+              </p>
+              <p>
+                Мы понимаем, как важно оправдывать доверие наших клиентов, именно поэтому уделяем особое внимание подбору команды. Строительством домов занимаются люди, обладающие опытом и профессионализмом, что позволяет нам
+                строить качественные, надежные и комфортные дома для постоянного проживания.
+              </p>
+              <div class="infobtn-jcc">
+                <a href="#" class="btn w229">О компании</a>
+              </div>
+            </div>            
+            <div class="info-col-2-cons">
+              <div class="info-col-2-cons-txt">
+                Планируете строить с использованием кредита <br />
+                или материнского капитала?
+              </div>
+              <div class="info-btn-w">
+                <a href="#" class="btn w229">Проконсультироваться</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <div class="step">
+    <div class="contain">
+      <div class="step-w">
+        <div class="step-h">
+          <div class="step-h-txt-1">
+            5 шагов
+          </div>
+          <div class="step-h-txt-2">для осуществления своей мечты</div>
+        </div>
+        <div class="step-row">
+          <div class="step-it">
+            <div class="step-it-img-w"><img src="img/step_1.png" /></div>
+            <div class="step-it-txt">
+              Звоните: <br />
+              +7 (495) 152 76 02<br />
+              или оставляете <a href="#">заявку</a>
+            </div>
+            <div class="step-it-num">1</div>
+          </div>
+          <div class="step-it">
+            <div class="step-it-img-w"><img src="img/step_2.png" /></div>
+            <div class="step-it-txt">
+              Встречаемся<br />
+              в офисе<br />
+              или общаемся online
+            </div>
+            <div class="step-it-num">2</div>
+          </div>
+          <div class="step-it">
+            <div class="step-it-img-w"><img src="img/step_3.png" /></div>
+            <div class="step-it-txt">Заключаем договор</div>
+            <div class="step-it-num">3</div>
+          </div>
+          <div class="step-it">
+            <div class="step-it-img-w"><img src="img/step_4.png" /></div>
+            <div class="step-it-txt">Завозим материал и строим дом</div>
+            <div class="step-it-num">4</div>
+          </div>
+          <div class="step-it">
+            <div class="step-it-img-w"><img src="img/step_5.png" /></div>
+            <div class="step-it-txt">
+              Мечта <br />
+              сбылась!
+            </div>
+            <div class="step-it-num">5</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <section class="section built">
+    <div class="contain">
+      <h2 class="center">Построенные дома</h2>
+      <div class="built-row">
+        <div class="built-col">
+         @@include('var/_teaser-it2.html',{
+          "img":"teaser-22",
+          "adress":"Московская обл., Волоколамский р-н.",
+          "sort":"СИП-дом",
+          "square":"130 м²",
+          "name":"Индивидуальный проект"          
+        })
+      </div>
+      <div class="built-col">
+        @@include('var/_teaser-it2.html',{
+          "img":"teaser-21",
+          "adress":"Московская обл., Волоколамский р-н.",
+          "sort":"каменный дом",
+          "square":"118 м²",
+          "name":"«Жозефин»"          
+        })
+      </div>
+      <div class="built-col">
+        @@include('var/_teaser-it2.html',{
+          "img":"teaser-33",
+          "adress":"Московская обл., Волоколамский р-н.",
+          "sort":"СИП-дом",
+          "square":"325 м²",
+          "name":"Индивидуальный проект"          
+        })
+      </div>
+      <div class="built-col">
+        @@include('var/_teaser-it2.html',{
+          "img":"teaser-22",
+          "adress":"Московская обл., Волоколамский р-н.",
+          "sort":"СИП-дом",
+          "square":"130 м²",
+          "name":"Индивидуальный проект"          
+        })
+      </div>
+      <div class="built-col">
+        @@include('var/_teaser-it2.html',{
+          "img":"teaser-21",
+          "adress":"Московская обл., Волоколамский р-н.",
+          "sort":"СИП-дом",
+          "square":"130 м²",
+          "name":"Индивидуальный проект"          
+        })
+      </div>
+      <div class="built-col">
+        @@include('var/_teaser-it2.html',{
+          "img":"teaser-33",
+          "adress":"Московская обл., Волоколамский р-н.",
+          "sort":"СИП-дом",
+          "square":"130 м²",
+          "name":"Индивидуальный проект"          
+        })
+      </div>
+    </div><!--built-row-->
+    <div class="built-btn-w">
+      <a href="#" class="btn built-btn w229">Смотреть все</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="contain">
+    <h2 class="center">Отзывы наших клиентов</h2>
+  </div>
+</section>
+
+
+</main>
+@@include('var/_footer.html')
+<div class="overlay"></div>
 </div>
 <!--wrapper-->
+@@include('var/_scripts.html')
 
-<script src="js/jquery-3.4.1.min.js"></script>      
-<script src="js/slick.js"></script>
-<script src="js/common.js"></script>
 </body>
 </html>
 

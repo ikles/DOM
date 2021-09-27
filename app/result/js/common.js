@@ -113,6 +113,38 @@ $('.accordion-header').toggleClass('inactive-header');
    }); 
   }
 
+  if ($('.built-row').length) {
+    $('.built-row').slick({  
+     dots: false,
+     infinite: true,
+     speed: 300,
+     slidesToShow: 4,
+     responsive: [
+
+     {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3        
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 1
+      }
+    },
+    ]     
+  }); 
+  }
+
+
+
 /*
   infinite: true,
   speed: 300,
@@ -128,19 +160,19 @@ $('.accordion-header').toggleClass('inactive-header');
 
 
 //RANGE
-const priceSlider = document.querySelector('.price__range');
+const priceSlider = document.querySelector('.price__range--1');
 if (priceSlider) {
 
   //let textFrom = priceSlider.getAttribute('data-from');
   let textTo = priceSlider.getAttribute('data-to');
 
   noUiSlider.create(priceSlider, {
-    start: [4290, 19990],
+    start: [20, 250],
     connect: true,
     //tooltips: [wNumb({ decimals: 0, prefix: '' + '' }), wNumb({ decimals: 0, prefix: '' + '' })],
     range: {
-      'min': [0],
-      'max': [25000]
+      'min': [10],
+      'max': [500]
     }    
   });
 
@@ -177,18 +209,69 @@ function setPriceValues() {
 }// if priceSlider
 
 
-  $('.link').click(function(e) {
-    $('.modal-overlay_1').fadeIn();
-    e.preventDefault();
-    $('body').addClass('ohi');
-  });
 
 
-  $('.pop-close, .modal-overlay').click(function(e) {
-    e.preventDefault();
-    $('.modal-overlay').fadeOut();
-    $('body').removeClass('ohi');
+const priceSlider2 = document.querySelector('.price__range--2');
+if (priceSlider2) {
+
+  //let textFrom = priceSlider.getAttribute('data-from');
+  let textTo = priceSlider2.getAttribute('data-to');
+
+  noUiSlider.create(priceSlider2, {
+    start: [2000000, 10000000],
+    connect: true,
+    //tooltips: [wNumb({ decimals: 0, prefix: '' + '' }), wNumb({ decimals: 0, prefix: '' + '' })],
+    range: {
+      'min': [1800000],
+      'max': [22800000]
+    }    
   });
+
+  
+  const priceStart2 = document.getElementById('price-start2');
+  const priceEnd2 = document.getElementById('price-end2');
+  priceStart2.addEventListener('change', setPriceValues);
+  priceEnd2.addEventListener('change', setPriceValues);
+  
+
+
+
+//Значения из ползунков в инпуты
+priceSlider2.noUiSlider.on('update', function(values, handle) {
+  priceStart2.value = +Math.round(priceSlider2.noUiSlider.get()[0]);
+  priceEnd2.value = +Math.round(priceSlider2.noUiSlider.get()[1]);
+});
+
+
+
+function setPriceValues() {
+  let priceStartValue2;
+  let priceEndValue2;
+  if (priceStart2.value != '') {
+    priceStartValue2 = priceStart2.value;
+  }
+  if (priceEnd2.value != '') {
+    priceEndValue2 = priceEnd2.value;
+  }
+  priceSlider2.noUiSlider.set([priceStartValue2, priceEndValue2]);
+
+
+  } //spV
+}// if priceSlider
+
+
+$('.link').click(function(e) {
+  $('.modal-overlay_1').fadeIn();
+  e.preventDefault();
+  $('body').addClass('ohi');
+});
+
+
+$('.pop-close, .modal-overlay').click(function(e) {
+  e.preventDefault();
+  $('.modal-overlay').fadeOut();
+  $('body').removeClass('ohi');
+});
 
 
 
