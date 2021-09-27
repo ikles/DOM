@@ -1660,7 +1660,9 @@ input[type="text"].input-2 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 8px;	
+	margin-bottom: 8px;		
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
 	img {
 		max-width: 100%;
 		width: 100%;
@@ -1762,10 +1764,11 @@ input[type="text"].input-2 {
 	margin-top: auto;
 	background-image: url("../img/cons.jpg");
 	background-repeat: no-repeat;
-	background-position: left top;
+	background-position: bottom center;
 	padding-top: 449px;
 	padding-bottom: 52px;	
-	background-size: cover;
+	background-size: cover;	
+	        border-radius: 5px;
 }
 
 .info-col-2-cons-txt {
@@ -1819,9 +1822,9 @@ input[type="text"].input-2 {
 
 .step-it {
 	background-color: rgb(133, 173, 62);
-	border-radius: 5%;
+	border-radius: 5px;
 	padding-top: 36px;
-	width: calc(20% - 5.6px);
+	width: calc(20% - 6px);
 	position: relative;
 	display: flex;	
 	align-items: center;
@@ -1863,6 +1866,11 @@ input[type="text"].input-2 {
 	display: flex;
 	flex-direction: column;          
 	justify-content: flex-end;
+	img {
+		max-height: 100%;
+		width: auto;
+	}
+	
 }
 
 .step-it-txt {

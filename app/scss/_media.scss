@@ -47,6 +47,18 @@
 		font-size: 21px;
 		margin-bottom: 20px;
 	}
+	.step {
+		padding: 60px 0;
+	}
+	.step-h-txt-1 {
+		font-size: 80px;
+	}
+	.step-h-txt-2 {
+		font-size: 30px;
+	}
+	.step-h {
+		margin-bottom: 65px;
+	}
 }
 @media only screen and (max-width : 1199px) {
 	.contain {
@@ -78,6 +90,15 @@
 		.teasers-col {
 			width: 33.333%;		
 		}
+	}
+	.step-it-img-w {
+		height: 40px;
+	}
+	.step-it-txt {
+		font-size: 16px;
+	}
+	.step-it-num {
+		font-size: 141px;
 	}
 }
 
@@ -136,6 +157,20 @@
 			width: 50%;		
 		}
 	}
+		.step-it-img-w {
+		margin-bottom: 12px;
+		height: 35px;
+	}
+	.step-it-txt {
+		font-size: 13px;
+		padding: 0 10px;
+	}
+	.step-it-num {
+		font-size: 128px;
+	}
+	.info-col-2-p-w {
+		padding-top: 0;
+	}
 } 
 
 /* Small Devices, Tablets */
@@ -193,6 +228,55 @@
 	}
 	.filter-item:not(:last-child) {
 		margin-bottom: 22px;
+	}
+	.step-it:before {
+		display: none;
+	}
+	.step-row {		
+		        flex-wrap: wrap;
+	}
+	.step-it {
+		width: calc(50% - 5px);
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}		
+		&:last-child {
+			width: 100%;
+		}
+	}
+	
+	.step-it-txt {
+		font-size: 16px;
+	}
+	.step-it-num {
+		font-size: 141px;
+		line-height: 1;
+	}
+	.step-it-img-w {
+		height: 52px;
+	}
+
+		.step {
+		padding: 40px 0;
+	}
+	.step-h-txt-1 {
+		font-size: 60px;
+	}
+	.step-h-txt-2 {
+		font-size: 25px;
+	}
+	.step-h {
+		margin-bottom: 35px;
+	}
+	.info-w {		
+		        flex-wrap: wrap;
+	}
+	.info-col-1-w {
+		width: 100%;
+	}
+	.info-col-2 {
+		margin-left: 0;
+		margin-top: 25px;
 	}
 }      
 
@@ -276,6 +360,18 @@
 		font-size: 16px;
 		line-height: 1.4;
 	}
+
+		
+	.step-h-txt-1 {
+		font-size: 50px;
+	}
+	.step-h-txt-2 {
+		font-size: 20px;
+	}
+	.step-h {
+		margin-bottom: 30px;
+	}
+
 }
 
 
@@ -331,6 +427,29 @@
 	top: 130px;
 	}	
 	}	
+		.step-it-txt {
+		font-size: 13px;		
+	}
+	.step-it-num {
+		font-size: 128px;
+	}
+		.step-h-txt-1 {
+		font-size: 45px;
+	}
+	.step-h-txt-2 {
+		font-size: 18px;
+		line-height: 1.4;
+	}
+	.info-col-2-cons-txt {
+		font-size: 20px;
+	}
+	.info-col-2-p-w {
+		margin-bottom: 25px;
+	}
+	.info-col-2-p-w p {
+		font-size: 16px;
+	}
+	
 }
 
 @media only screen and (max-width : 375px) {
@@ -349,6 +468,10 @@
 	}
 	.slick-arrow {
 		top: 245px;
+	}
+	.info-col-2-cons-txt {
+		font-size: 17px;
+		padding: 0 5px;
 	}
 }
 
