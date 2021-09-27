@@ -127,6 +127,55 @@ $('.accordion-header').toggleClass('inactive-header');
   */
 
 
+//RANGE
+const priceSlider = document.querySelector('.price__range');
+if (priceSlider) {
+
+  //let textFrom = priceSlider.getAttribute('data-from');
+  let textTo = priceSlider.getAttribute('data-to');
+
+  noUiSlider.create(priceSlider, {
+    start: [4290, 19990],
+    connect: true,
+    //tooltips: [wNumb({ decimals: 0, prefix: '' + '' }), wNumb({ decimals: 0, prefix: '' + '' })],
+    range: {
+      'min': [0],
+      'max': [25000]
+    }    
+  });
+
+  
+  const priceStart = document.getElementById('price-start');
+  const priceEnd = document.getElementById('price-end');
+  priceStart.addEventListener('change', setPriceValues);
+  priceEnd.addEventListener('change', setPriceValues);
+  
+
+
+
+//Значения из ползунков в инпуты
+priceSlider.noUiSlider.on('update', function(values, handle) {
+  priceStart.value = +Math.round(priceSlider.noUiSlider.get()[0]);
+  priceEnd.value = +Math.round(priceSlider.noUiSlider.get()[1]);
+});
+
+
+
+function setPriceValues() {
+  let priceStartValue;
+  let priceEndValue;
+  if (priceStart.value != '') {
+    priceStartValue = priceStart.value;
+  }
+  if (priceEnd.value != '') {
+    priceEndValue = priceEnd.value;
+  }
+  priceSlider.noUiSlider.set([priceStartValue, priceEndValue]);
+
+
+  } //spV
+}// if priceSlider
+
 
   $('.link').click(function(e) {
     $('.modal-overlay_1').fadeIn();
