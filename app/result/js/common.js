@@ -143,7 +143,16 @@ $('.accordion-header').toggleClass('inactive-header');
   }); 
   }
 
+$('.filter-label-more').click(function () {
+  $('.filter-label-more ~ .filter-2-label').show();
+  $(this).remove();
+});
 
+
+$('.price-sort').click(function (e) {
+  e.preventDefault();
+  $(this).find('i').toggleClass('rot')
+})
 
 /*
   infinite: true,

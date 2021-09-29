@@ -5,7 +5,7 @@
   <!--meta name="viewport" content="width=1200px"-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>1. Главная</title>  
+  <title>3. Каталог проектов</title>  
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/slick.css">
@@ -185,97 +185,15 @@
       </div>
     </header>    
     <main class="main">
-      <div class="sl">
-        <div class="sl-it">
-          <img src="img/bg_sl.jpg" alt="">
-          <div class="sl-pos">
-            <div class="contain">
-              <div class="sl-w">                
-                <div class="sl-l">
-                  <div class="sl-txt-0">Дом месяца</div>
-                  <div class="sl-txt-1">Проект “ницца”</div>
-                  <div class="sl-txt-2">Специальные условия <br>
-                  до 31 июля</div>
-                  <a href="#" class="btn sl-btn w229">Подобрать</a>
-                </div>
-              </div>
-            </div>
-          </div>          
-        </div><!--item-->
-        <div class="sl-it">
-          <img src="img/bg_sl.jpg" alt="">
-          <div class="sl-pos">
-            <div class="contain">
-              <div class="sl-w">                
-                <div class="sl-l">
-                  <div class="sl-txt-0">Дом месяца</div>
-                  <div class="sl-txt-1">Проект “ницца”</div>
-                  <div class="sl-txt-2">Специальные условия <br>
-                  до 31 июля</div>
-                  <a href="#" class="btn sl-btn w229">Подобрать</a>
-                </div>
-              </div>
-            </div>
-          </div>          
-        </div><!--item-->
-      </div>
-
-
-      <div class="adv">
+      <div class="bread">
         <div class="contain">
-          <div class="adv-w row20">
-            <div class="adv-col col-20">
-              <div class="adv-it">
-                <div class="adv-img-w"><img src="img/adv_1.png" /></div>
-                <div class="adv-txt">
-                  Гарантия <br />
-                  на все работы <br />
-                  15 лет
-                </div>
-              </div>
-            </div>
-            <div class="adv-col col-20">
-              <div class="adv-it">
-                <div class="adv-img-w"><img src="img/adv_2.png" /></div>
-                <div class="adv-txt">
-                  СОБСТВЕННОЕ<br />
-                  ПРОИЗВОДСТВО
-                </div>
-              </div>
-            </div>
-            <div class="adv-col col-20">
-              <div class="adv-it">
-                <div class="adv-img-w"><img src="img/adv_3.png" /></div>
-                <div class="adv-txt">
-                  БОЛЕЕ 10 ЛЕТ <br />
-                  В СТРОИТЕЛЬСТВЕ!
-                </div>
-              </div>
-            </div>
-            <div class="adv-col col-20">
-              <div class="adv-it">
-                <div class="adv-img-w"><img src="img/adv_4.png" /></div>
-                <div class="adv-txt">
-                  Онлайн-кабинет<br />
-                  с веб-камерой
-                </div>
-              </div>
-            </div>
-            <div class="adv-col col-20">
-              <div class="adv-it">
-                <div class="adv-img-w"><img src="img/adv_5.png" /></div>
-                <div class="adv-txt">
-                  Строители<br />
-                  с опытом<br />
-                  более 15 лет
-                </div>
-              </div>
-            </div>
-          </div>
+          <ul class="bread-ul">
+            <li><a href="#">Главная</a></li>
+            <li><span>Каталог</span></li>
+          </ul>
         </div>
-      </div><!--adv-->
-
-      <section class="catalog section">
+      </div>
+      <section class="catalog catalog-page section">
         <div class="contain">
           <h2 class="center">Каталог проектов</h2>
           <div class="catalog-w">
@@ -303,11 +221,14 @@
   </div>
 </div>
           </div><!--catalog-w-->
-          <div class="filter">
-            <form class="filter-form">
-              <div class="filter-rows">
-                <div class="filter-row">
-                  <div class="filter-col filter-col-1">
+
+          <div class="catalog-row">
+            <div class="catalog-col-l">
+             <div class="filter left-filter">
+              <form class="filter-form">
+                <div class="filter-rows">
+
+                  <div class="filter-row-h">
                     <div class="filter-item">
                       <div class="filter-tit">Технология строительства</div>
                       <label class="filter-label">
@@ -326,9 +247,9 @@
                         <span class="filter-label-txt">СИП</span>
                       </label>
                     </div>
-
                   </div>
-                  <div class="filter-col filter-col-2">
+
+                  <div class="filter-row-h">
                     <div class="filter-item">
                       <div class="filter-tit">Этажность</div>
                       <label class="filter-label">
@@ -353,8 +274,9 @@
                       </label>
                     </div>
                   </div>
-                  <div class="filter-col filter-col-3">
 
+
+                  <div class="filter-row-h">
                     <div class="filter-item">
                       <div class="filter-tit">Площадь, м2</div>
                       <div class="form__line">
@@ -371,10 +293,11 @@
                         </div>
                       </div><!--form__line-->
                     </div>
-
-
                   </div>
-                  <div class="filter-col filter-col-4">
+
+
+
+                  <div class="filter-row-h">
                     <div class="filter-item">
                       <div class="filter-tit">Количество спален</div>
                       <div class="filter-2-labels">
@@ -408,207 +331,7 @@
                         <span class="filter-check-span"></span>
                         <span class="filter-label-txt">Спальня на первом этаже</span>
                       </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="filter-row">
-                  <div class="filter-col filter-col-1">
-
-                    <div class="filter-item">
-                      <div class="filter-tit">Габариты</div>
-                      <div class="filter-2-labels">
-                        <label class="filter-2-label">
-                          <input class="filter-2-check" type="checkbox">
-                          <span class="filter-2-check-span">6х6</span>                      
-                        </label>
-                        <label class="filter-2-label">
-                          <input class="filter-2-check" type="checkbox">
-                          <span class="filter-2-check-span">6х7</span>                      
-                        </label>
-                        <label class="filter-2-label">
-                          <input class="filter-2-check" type="checkbox">
-                          <span class="filter-2-check-span">6х8</span>                      
-                        </label>
-                        <label class="filter-2-label">
-                          <input class="filter-2-check" type="checkbox">
-                          <span class="filter-2-check-span">6х8</span>                      
-                        </label>
-                        <label class="filter-2-label">
-                          <input class="filter-2-check" type="checkbox">
-                          <span class="filter-2-check-span">7х8</span>                      
-                        </label>
-                        <label class="filter-2-label">
-                          <input class="filter-2-check" type="checkbox">
-                          <span class="filter-2-check-span">7х9</span>                      
-                        </label>
-                        <label class="filter-2-label">
-                          <input class="filter-2-check" type="checkbox">
-                          <span class="filter-2-check-span">8х8</span>                      
-                        </label>
-                        <label class="filter-2-label">
-                          <input class="filter-2-check" type="checkbox">
-                          <span class="filter-2-check-span">8х9</span>                      
-                        </label>
-                        <label class="filter-2-label">
-                          <input class="filter-2-check" type="checkbox">
-                          <span class="filter-2-check-span">8х10</span>                      
-                        </label>
-                        <label class="filter-2-label">
-                          <input class="filter-2-check" type="checkbox">
-                          <span class="filter-2-check-span">9х9</span>                      
-                        </label>
-                        <label class="filter-2-label">
-                          <input class="filter-2-check" type="checkbox">
-                          <span class="filter-2-check-span">9х10</span>                      
-                        </label>
-                        <label class="filter-2-label">
-                          <input class="filter-2-check" type="checkbox">
-                          <span class="filter-2-check-span">10х10</span>                      
-                        </label>
-                        <label class="filter-2-label">
-                          <input class="filter-2-check" type="checkbox">
-                          <span class="filter-2-check-span">10х12</span>                      
-                        </label>
-                        <label class="filter-2-label">
-                          <input class="filter-2-check" type="checkbox">
-                          <span class="filter-2-check-span">12х12</span>                      
-                        </label>
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="filter-col filter-col-2">
-
-                    <div class="filter-item">
-                      <div class="filter-tit">Тип кровли</div>
-                      <label class="filter-label">
-                        <input class="filter-check" type="checkbox">
-                        <span class="filter-check-span"></span>
-                        <span class="filter-label-txt">Односкатная</span>
-                      </label>
-                      <label class="filter-label">
-                        <input class="filter-check" type="checkbox">
-                        <span class="filter-check-span"></span>
-                        <span class="filter-label-txt">Двухскатная</span>
-                      </label>
-                      <label class="filter-label">
-                        <input class="filter-check" type="checkbox">
-                        <span class="filter-check-span"></span>
-                        <span class="filter-label-txt">Вальмовая</span>
-                      </label>
-                      <label class="filter-label">
-                        <input class="filter-check" type="checkbox">
-                        <span class="filter-check-span"></span>
-                        <span class="filter-label-txt">Плоская</span>
-                      </label>
-                      <label class="filter-label">
-                        <input class="filter-check" type="checkbox">
-                        <span class="filter-check-span"></span>
-                        <span class="filter-label-txt">Сложная</span>
-                      </label>
-                    </div>
-
-                    <div class="filter-item">
-                      <div class="filter-tit">Площадь</div>
-                      <label class="filter-label">
-                        <input class="filter-check" type="checkbox">
-                        <span class="filter-check-span"></span>
-                        <span class="filter-label-txt">до 100 м2</span>
-                      </label>
-                      <label class="filter-label">
-                        <input class="filter-check" type="checkbox">
-                        <span class="filter-check-span"></span>
-                        <span class="filter-label-txt">от 100 м2 до 150 м2</span>
-                      </label>
-                      <label class="filter-label">
-                        <input class="filter-check" type="checkbox">
-                        <span class="filter-check-span"></span>
-                        <span class="filter-label-txt">от 150 м2 до 200 м2</span>
-                      </label>
-                      <label class="filter-label">
-                        <input class="filter-check" type="checkbox">
-                        <span class="filter-check-span"></span>
-                        <span class="filter-label-txt">от 200 м2 до 250 м2</span>
-                      </label>
-                      <label class="filter-label">
-                        <input class="filter-check" type="checkbox">
-                        <span class="filter-check-span"></span>
-                        <span class="filter-label-txt">более 250 м2</span>
-                      </label>    
-                    </div>
-
-                  </div>
-                  <div class="filter-col filter-col-3">
-
-
-                    <div class="filter-item">
-                      <div class="filter-tit">Базовая стоимость, <span>₽</span></div>
-                      <div class="form__line">
-                        <div class="price">
-                          <div class="price__inputs">
-                            <input id="price-start2" type="text" class="input-2" autocomplete="off">
-                            <input id="price-end2" type="text" class="input-2" autocomplete="off">
-                            <div class="price__range price__range--2"></div>
-                          </div>
-                          <div class="price__captions">
-                            <div class="price__caption">от 1 800 000</div>
-                            <div class="price__caption">до 22 800 000</div>
-                          </div>
-                        </div>
-                      </div><!--form__line-->
-                    </div>
-
-                    <div class="filter-item">
-                      <div class="filter-tit">Стиль</div>
-                      <label class="filter-label">
-                        <input class="filter-check" type="checkbox">
-                        <span class="filter-check-span"></span>
-                        <span class="filter-label-txt">Барнхаус</span>
-                      </label>
-                      <label class="filter-label">
-                        <input class="filter-check" type="checkbox">
-                        <span class="filter-check-span"></span>
-                        <span class="filter-label-txt">Классический</span>
-                      </label>
-                      <label class="filter-label">
-                        <input class="filter-check" type="checkbox">
-                        <span class="filter-check-span"></span>
-                        <span class="filter-label-txt">Шале</span>
-                      </label>
-                      <label class="filter-label">
-                        <input class="filter-check" type="checkbox">
-                        <span class="filter-check-span"></span>
-                        <span class="filter-label-txt">Модерн</span>
-                      </label>
-                      <label class="filter-label">
-                        <input class="filter-check" type="checkbox">
-                        <span class="filter-check-span"></span>
-                        <span class="filter-label-txt">Современный</span>
-                      </label>
-                      <label class="filter-label">
-                        <input class="filter-check" type="checkbox">
-                        <span class="filter-check-span"></span>
-                        <span class="filter-label-txt">Европейский</span>
-                      </label>
-                      <label class="filter-label">
-                        <input class="filter-check" type="checkbox">
-                        <span class="filter-check-span"></span>
-                        <span class="filter-label-txt">Минимализм</span>
-                      </label>
-                      <label class="filter-label">
-                        <input class="filter-check" type="checkbox">
-                        <span class="filter-check-span"></span>
-                        <span class="filter-label-txt">Фахверк</span>
-                      </label>
-                      <label class="filter-label">
-                        <input class="filter-check" type="checkbox">
-                        <span class="filter-check-span"></span>
-                        <span class="filter-label-txt">Хай-тек</span>
-                      </label>
-                    </div>
-
-                  </div>
-                  <div class="filter-col filter-col-4">
+                    </div>                    
 
                     <div class="filter-item">
                       <div class="filter-tit">Количество санузлов</div>
@@ -631,8 +354,10 @@
                         </label>
                       </div><!--filter-2-labels-->                    
                     </div>
+                  </div> 
 
-                    <div class="filter-item">
+                  <div class="filter-row-h">
+                    <div class="filter-item filter-item-2">
                       <div class="filter-tit">Дополнительные параметры</div>
                       <label class="filter-label">
                         <input class="filter-check" type="checkbox">
@@ -685,146 +410,237 @@
                         <span class="filter-label-txt">Панорамное остекление</span>
                       </label>
                     </div>
+                  </div>          
+                  
+                  <div class="filter-row-h">
+
+                    <div class="filter-item filter-item-2">
+                      <div class="filter-tit">Стиль</div>
+                      <label class="filter-label">
+                        <input class="filter-check" type="checkbox">
+                        <span class="filter-check-span"></span>
+                        <span class="filter-label-txt">Барнхаус</span>
+                      </label>
+                      <label class="filter-label">
+                        <input class="filter-check" type="checkbox">
+                        <span class="filter-check-span"></span>
+                        <span class="filter-label-txt">Классический</span>
+                      </label>
+                      <label class="filter-label">
+                        <input class="filter-check" type="checkbox">
+                        <span class="filter-check-span"></span>
+                        <span class="filter-label-txt">Шале</span>
+                      </label>
+                      <label class="filter-label">
+                        <input class="filter-check" type="checkbox">
+                        <span class="filter-check-span"></span>
+                        <span class="filter-label-txt">Модерн</span>
+                      </label>
+                      <label class="filter-label">
+                        <input class="filter-check" type="checkbox">
+                        <span class="filter-check-span"></span>
+                        <span class="filter-label-txt">Современный</span>
+                      </label>
+                      <label class="filter-label">
+                        <input class="filter-check" type="checkbox">
+                        <span class="filter-check-span"></span>
+                        <span class="filter-label-txt">Европейский</span>
+                      </label>
+                      <label class="filter-label">
+                        <input class="filter-check" type="checkbox">
+                        <span class="filter-check-span"></span>
+                        <span class="filter-label-txt">Минимализм</span>
+                      </label>
+                      <label class="filter-label">
+                        <input class="filter-check" type="checkbox">
+                        <span class="filter-check-span"></span>
+                        <span class="filter-label-txt">Фахверк</span>
+                      </label>
+                      <label class="filter-label">
+                        <input class="filter-check" type="checkbox">
+                        <span class="filter-check-span"></span>
+                        <span class="filter-label-txt">Хай-тек</span>
+                      </label>
+                    </div>
                   </div>
-                </div><!--filter-row-->
+
+
+                  <div class="filter-row-h">
+                    <div class="filter-item filter-item-2">
+                      <div class="filter-tit">Тип кровли</div>
+                      <label class="filter-label">
+                        <input class="filter-check" type="checkbox">
+                        <span class="filter-check-span"></span>
+                        <span class="filter-label-txt">Односкатная</span>
+                      </label>
+                      <label class="filter-label">
+                        <input class="filter-check" type="checkbox">
+                        <span class="filter-check-span"></span>
+                        <span class="filter-label-txt">Двухскатная</span>
+                      </label>
+                      <label class="filter-label">
+                        <input class="filter-check" type="checkbox">
+                        <span class="filter-check-span"></span>
+                        <span class="filter-label-txt">Вальмовая</span>
+                      </label>
+                      <label class="filter-label">
+                        <input class="filter-check" type="checkbox">
+                        <span class="filter-check-span"></span>
+                        <span class="filter-label-txt">Плоская</span>
+                      </label>
+                      <label class="filter-label">
+                        <input class="filter-check" type="checkbox">
+                        <span class="filter-check-span"></span>
+                        <span class="filter-label-txt">Сложная</span>
+                      </label>
+                    </div>
+                  </div>
+                  <!--!div class="filter-row-h">
+
+                    <div class="filter-item">
+                      <div class="filter-tit">Площадь</div>
+                      <label class="filter-label">
+                        <input class="filter-check" type="checkbox">
+                        <span class="filter-check-span"></span>
+                        <span class="filter-label-txt">до 100 м2</span>
+                      </label>
+                      <label class="filter-label">
+                        <input class="filter-check" type="checkbox">
+                        <span class="filter-check-span"></span>
+                        <span class="filter-label-txt">от 100 м2 до 150 м2</span>
+                      </label>
+                      <label class="filter-label">
+                        <input class="filter-check" type="checkbox">
+                        <span class="filter-check-span"></span>
+                        <span class="filter-label-txt">от 150 м2 до 200 м2</span>
+                      </label>
+                      <label class="filter-label">
+                        <input class="filter-check" type="checkbox">
+                        <span class="filter-check-span"></span>
+                        <span class="filter-label-txt">от 200 м2 до 250 м2</span>
+                      </label>
+                      <label class="filter-label">
+                        <input class="filter-check" type="checkbox">
+                        <span class="filter-check-span"></span>
+                        <span class="filter-label-txt">более 250 м2</span>
+                      </label>    
+                    </div>
+                  </div-->
+
+
+
+                  <div class="filter-row-h">
+
+
+                    <div class="filter-item">
+                      <div class="filter-tit">Габариты</div>
+                      <div class="filter-2-labels filter-2-labels-2">
+                        <label class="filter-2-label">
+                          <input class="filter-2-check" type="checkbox">
+                          <span class="filter-2-check-span">6х6</span>                      
+                        </label>
+                        <label class="filter-2-label">
+                          <input class="filter-2-check" type="checkbox">
+                          <span class="filter-2-check-span">6х7</span>                      
+                        </label>
+                        <label class="filter-2-label">
+                          <input class="filter-2-check" type="checkbox">
+                          <span class="filter-2-check-span">6х8</span>                      
+                        </label>
+                        <div class="filter-label-more">еще</div>
+                        <label class="filter-2-label">
+                          <input class="filter-2-check" type="checkbox">
+                          <span class="filter-2-check-span">7х8</span>                      
+                        </label>
+                        <label class="filter-2-label">
+                          <input class="filter-2-check" type="checkbox">
+                          <span class="filter-2-check-span">7х9</span>                      
+                        </label>
+                        <label class="filter-2-label">
+                          <input class="filter-2-check" type="checkbox">
+                          <span class="filter-2-check-span">8х8</span>                      
+                        </label>
+                        <label class="filter-2-label">
+                          <input class="filter-2-check" type="checkbox">
+                          <span class="filter-2-check-span">8х9</span>                      
+                        </label>
+                        <label class="filter-2-label">
+                          <input class="filter-2-check" type="checkbox">
+                          <span class="filter-2-check-span">8х10</span>                      
+                        </label>
+                        <label class="filter-2-label">
+                          <input class="filter-2-check" type="checkbox">
+                          <span class="filter-2-check-span">9х9</span>                      
+                        </label>
+                        <label class="filter-2-label">
+                          <input class="filter-2-check" type="checkbox">
+                          <span class="filter-2-check-span">9х10</span>                      
+                        </label>
+                        <label class="filter-2-label">
+                          <input class="filter-2-check" type="checkbox">
+                          <span class="filter-2-check-span">10х10</span>                      
+                        </label>
+                        <label class="filter-2-label">
+                          <input class="filter-2-check" type="checkbox">
+                          <span class="filter-2-check-span">10х12</span>                      
+                        </label>
+                        <label class="filter-2-label">
+                          <input class="filter-2-check" type="checkbox">
+                          <span class="filter-2-check-span">12х12</span>                      
+                        </label>
+                      </div>
+                    </div>                  
+
+                    <div class="filter-item">
+                      <div class="filter-tit">Базовая стоимость, <span>₽</span></div>
+                      <div class="form__line">
+                        <div class="price">
+                          <div class="price__inputs">
+                            <input id="price-start2" type="text" class="input-2" autocomplete="off">
+                            <input id="price-end2" type="text" class="input-2" autocomplete="off">
+                            <div class="price__range price__range--2"></div>
+                          </div>
+                          <div class="price__captions">
+                            <div class="price__caption">от 1 800 000</div>
+                            <div class="price__caption">до 22 800 000</div>
+                          </div>
+                        </div>
+                      </div><!--form__line-->
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+
+                </div>
+              </form>
+            </div><!--filter-->
+          </div><!--catalog-col-l-->
+
+          <div class="catalog-col-r">
+
+            <div class="pagin-row">
+
+              <div class="pagin-l">
+                <div class="pagin-cap">Сортировать по:</div>
+                <ul class="pagin-sort">
+                  <li><a href="#">ПОПУЛЯРНОСТИ</a></li>
+                  <li><a class="price-sort active" href="#"><span>ЦЕНЕ</span> <i></i></a></li>
+                  <li><a href="#">площади</a></li>
+                </ul>
               </div>
-              <div class="filter-buttons">
-                <a href="#" class="filter-btn-hide btn-o"><span>Свернуть фильтр</span><i></i></a>
-                <a href="#" class="filter-btn btn">Показать 34 проекта</a>
+              <div class="pagin-r">
+                <div class="pagin-total">108 222 проекта</div>
               </div>
-            </form>
-          </div><!--filter-->
-        </div><!--contain-->
-      </section><!--catalog-->
+            </div>
 
-
-
-      <div class="popular">
-        <div class="contain">
-          <h2 class="center">Популярные проекты домов</h2>
-          <div class="popular-row teasers-row row10">
-            <div class="popular-col teasers-col col-25">
-              <div class="teaser-it">
-    <a href="#" class="teaser-img-w"><img src="img/teaser-1.jpg" class="teaser-img" /></a>
-    <div class="teaser-bot">
-        <div class="teaser-info">
-            <div class="teaser-info-item-first">
-                <img src="img/plan.png" class="teaser-info-img" />
-                <span class="teaser-info-black">108 м²</span>
-            </div>
-            <div class="teaser-info-item">
-                <img src="img/place.png" class="teaser-info-img" />
-                <span class="teaser-info-black">2</span>
-            </div>
-            <div class="teaser-info-items">
-                <div class="teaser-info-item">
-                    <img src="img/eye.png" class="teaser-info-img" />
-                    <span class="teaser-info-gray">9 124</span>
-                </div>
-                <div class="hearts">
-                    <label class="heart-label">
-                        <input class="heart-check" type="checkbox">
-                        <span class="heart-span"></span>
-                    </label>                                        
-                </div>
-            </div>
-        </div>
-        <div class="teaser-info-2">
-            <div class="teaser-info-l">
-                <div class="teaser-info-cap">СИП-дом</div>
-                <a href="#" class="teaser-info-name">Дарина</a>
-            </div>
-            <div class="teaser-info-r">
-                <div class="teaser-info-old-price"><span>6 355 000</span> ₽</div>
-                <div class="teaser-info-price"><span>3 022 000</span> ₽</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-            </div><!--popular-col teasers-col-->
-            <div class="popular-col teasers-col col-25">
-              <div class="teaser-it">
-    <a href="#" class="teaser-img-w"><img src="img/teaser-2.jpg" class="teaser-img" /></a>
-    <div class="teaser-bot">
-        <div class="teaser-info">
-            <div class="teaser-info-item-first">
-                <img src="img/plan.png" class="teaser-info-img" />
-                <span class="teaser-info-black">125 м²</span>
-            </div>
-            <div class="teaser-info-item">
-                <img src="img/place.png" class="teaser-info-img" />
-                <span class="teaser-info-black">2</span>
-            </div>
-            <div class="teaser-info-items">
-                <div class="teaser-info-item">
-                    <img src="img/eye.png" class="teaser-info-img" />
-                    <span class="teaser-info-gray">9 124</span>
-                </div>
-                <div class="hearts">
-                    <label class="heart-label">
-                        <input class="heart-check" type="checkbox">
-                        <span class="heart-span"></span>
-                    </label>                                        
-                </div>
-            </div>
-        </div>
-        <div class="teaser-info-2">
-            <div class="teaser-info-l">
-                <div class="teaser-info-cap">каменный дом</div>
-                <a href="#" class="teaser-info-name">«Астрид»</a>
-            </div>
-            <div class="teaser-info-r">
-                <div class="teaser-info-old-price"><span>6 355 000</span> ₽</div>
-                <div class="teaser-info-price"><span>3 500 000</span> ₽</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-            </div><!--popular-col teasers-col-->
-            <div class="popular-col teasers-col col-25">
-              <div class="teaser-it">
-    <a href="#" class="teaser-img-w"><img src="img/teaser-3.jpg" class="teaser-img" /></a>
-    <div class="teaser-bot">
-        <div class="teaser-info">
-            <div class="teaser-info-item-first">
-                <img src="img/plan.png" class="teaser-info-img" />
-                <span class="teaser-info-black">125 м²</span>
-            </div>
-            <div class="teaser-info-item">
-                <img src="img/place.png" class="teaser-info-img" />
-                <span class="teaser-info-black">2</span>
-            </div>
-            <div class="teaser-info-items">
-                <div class="teaser-info-item">
-                    <img src="img/eye.png" class="teaser-info-img" />
-                    <span class="teaser-info-gray">9 124</span>
-                </div>
-                <div class="hearts">
-                    <label class="heart-label">
-                        <input class="heart-check" type="checkbox">
-                        <span class="heart-span"></span>
-                    </label>                                        
-                </div>
-            </div>
-        </div>
-        <div class="teaser-info-2">
-            <div class="teaser-info-l">
-                <div class="teaser-info-cap">каменный дом</div>
-                <a href="#" class="teaser-info-name">«Астрид»</a>
-            </div>
-            <div class="teaser-info-r">
-                <div class="teaser-info-old-price"><span>6 355 000</span> ₽</div>
-                <div class="teaser-info-price"><span>3 500 000</span> ₽</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-            </div><!--popular-col teasers-col-->
-            <div class="popular-col teasers-col col-25">
-              <div class="teaser-it">
+            <div class="sort-items row10">
+             <div class="col-33">
+               <div class="teaser-it">
     <a href="#" class="teaser-img-w"><img src="img/teaser-4.jpg" class="teaser-img" /></a>
     <div class="teaser-bot">
         <div class="teaser-info">
@@ -862,174 +678,50 @@
     </div>
 </div>
 
-            </div><!--popular-col teasers-col-->
-            <div class="popular-col teasers-col col-25">
-              <div class="teaser-it">
-    <a href="#" class="teaser-img-w"><img src="img/teaser-5.jpg" class="teaser-img" /></a>
-    <div class="teaser-bot">
-        <div class="teaser-info">
-            <div class="teaser-info-item-first">
-                <img src="img/plan.png" class="teaser-info-img" />
-                <span class="teaser-info-black">125 м²</span>
             </div>
-            <div class="teaser-info-item">
-                <img src="img/place.png" class="teaser-info-img" />
-                <span class="teaser-info-black">2</span>
-            </div>
-            <div class="teaser-info-items">
-                <div class="teaser-info-item">
-                    <img src="img/eye.png" class="teaser-info-img" />
-                    <span class="teaser-info-gray">9 124</span>
-                </div>
-                <div class="hearts">
-                    <label class="heart-label">
-                        <input class="heart-check" type="checkbox">
-                        <span class="heart-span"></span>
-                    </label>                                        
-                </div>
-            </div>
-        </div>
-        <div class="teaser-info-2">
-            <div class="teaser-info-l">
-                <div class="teaser-info-cap">каменный дом</div>
-                <a href="#" class="teaser-info-name">«Астрид»</a>
-            </div>
-            <div class="teaser-info-r">
-                <div class="teaser-info-old-price"><span>6 355 000</span> ₽</div>
-                <div class="teaser-info-price"><span>3 500 000</span> ₽</div>
-            </div>
-        </div>
-    </div>
-</div>
+          </div><!--sort-items-->
 
-            </div><!--popular-col teasers-col-->
-            <div class="popular-col teasers-col col-25">
-              <div class="teaser-it">
-    <a href="#" class="teaser-img-w"><img src="img/teaser-6.jpg" class="teaser-img" /></a>
-    <div class="teaser-bot">
-        <div class="teaser-info">
-            <div class="teaser-info-item-first">
-                <img src="img/plan.png" class="teaser-info-img" />
-                <span class="teaser-info-black">125 м²</span>
-            </div>
-            <div class="teaser-info-item">
-                <img src="img/place.png" class="teaser-info-img" />
-                <span class="teaser-info-black">2</span>
-            </div>
-            <div class="teaser-info-items">
-                <div class="teaser-info-item">
-                    <img src="img/eye.png" class="teaser-info-img" />
-                    <span class="teaser-info-gray">9 124</span>
-                </div>
-                <div class="hearts">
-                    <label class="heart-label">
-                        <input class="heart-check" type="checkbox">
-                        <span class="heart-span"></span>
-                    </label>                                        
-                </div>
-            </div>
-        </div>
-        <div class="teaser-info-2">
-            <div class="teaser-info-l">
-                <div class="teaser-info-cap">каменный дом</div>
-                <a href="#" class="teaser-info-name">«Астрид»</a>
-            </div>
-            <div class="teaser-info-r">
-                <div class="teaser-info-old-price"><span>6 355 000</span> ₽</div>
-                <div class="teaser-info-price"><span>3 500 000</span> ₽</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-            </div><!--popular-col teasers-col-->
-            <div class="popular-col teasers-col col-25">
-              <div class="teaser-it">
-    <a href="#" class="teaser-img-w"><img src="img/teaser-7.jpg" class="teaser-img" /></a>
-    <div class="teaser-bot">
-        <div class="teaser-info">
-            <div class="teaser-info-item-first">
-                <img src="img/plan.png" class="teaser-info-img" />
-                <span class="teaser-info-black">125 м²</span>
-            </div>
-            <div class="teaser-info-item">
-                <img src="img/place.png" class="teaser-info-img" />
-                <span class="teaser-info-black">2</span>
-            </div>
-            <div class="teaser-info-items">
-                <div class="teaser-info-item">
-                    <img src="img/eye.png" class="teaser-info-img" />
-                    <span class="teaser-info-gray">9 124</span>
-                </div>
-                <div class="hearts">
-                    <label class="heart-label">
-                        <input class="heart-check" type="checkbox">
-                        <span class="heart-span"></span>
-                    </label>                                        
-                </div>
-            </div>
-        </div>
-        <div class="teaser-info-2">
-            <div class="teaser-info-l">
-                <div class="teaser-info-cap">каменный дом</div>
-                <a href="#" class="teaser-info-name">«Астрид»</a>
-            </div>
-            <div class="teaser-info-r">
-                <div class="teaser-info-old-price"><span>6 355 000</span> ₽</div>
-                <div class="teaser-info-price"><span>3 500 000</span> ₽</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-            </div><!--popular-col teasers-col-->
-            <div class="popular-col teasers-col col-25">
-              <div class="teaser-it">
-    <a href="#" class="teaser-img-w"><img src="img/teaser-8.jpg" class="teaser-img" /></a>
-    <div class="teaser-bot">
-        <div class="teaser-info">
-            <div class="teaser-info-item-first">
-                <img src="img/plan.png" class="teaser-info-img" />
-                <span class="teaser-info-black">125 м²</span>
-            </div>
-            <div class="teaser-info-item">
-                <img src="img/place.png" class="teaser-info-img" />
-                <span class="teaser-info-black">2</span>
-            </div>
-            <div class="teaser-info-items">
-                <div class="teaser-info-item">
-                    <img src="img/eye.png" class="teaser-info-img" />
-                    <span class="teaser-info-gray">9 124</span>
-                </div>
-                <div class="hearts">
-                    <label class="heart-label">
-                        <input class="heart-check" type="checkbox">
-                        <span class="heart-span"></span>
-                    </label>                                        
-                </div>
-            </div>
-        </div>
-        <div class="teaser-info-2">
-            <div class="teaser-info-l">
-                <div class="teaser-info-cap">каменный дом</div>
-                <a href="#" class="teaser-info-name">«Астрид»</a>
-            </div>
-            <div class="teaser-info-r">
-                <div class="teaser-info-old-price"><span>6 355 000</span> ₽</div>
-                <div class="teaser-info-price"><span>3 500 000</span> ₽</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-            </div><!--popular-col teasers-col-->
-          </div><!--popular-row-->
-          <div class="popular-btn-w">
-            <a href="#" class="btn popular-btn w229">Все проекты</a>
+          <div class="sort-more-btn-w-jcc">
+            <a href="#" class="btn sort-more-btn w229">Показать еще</a>
           </div>
-        </div>
-      </div><!--popular-->
-            <section class="ind section">
+
+          <div class="pagin-row">
+            <div class="pagin-l">
+              <li class="pagin-li-prev pagin-li-arrow"><a href="#"></a></li>
+              <ul class="pagin-ul">
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+              </ul>
+              <li class="pagin-li-next pagin-li-arrow"><a href="#"></a></li>
+            </div>
+            <div class="pagin-r">
+              <div class="pagin-cap">Показывать по:</div>
+              <ul class="pagin-count">
+                <li><a href="#">12</a></li>
+                <li><a href="#">24</a></li>
+                <li><a href="#">48</a></li>
+              </ul>
+            </div>
+          </div><!--pagin-->
+
+
+
+        </div><!--catalog-col-r-->
+      </div><!--catalog-row-->
+
+
+
+
+    </div><!--contain-->
+  </section><!--catalog-->
+
+
+
+
+        <section class="ind section">
         <div class="contain">
           <div class="ind-w">
             <div class="ind-txt-1">Индивидуальное проектирование!</div>
@@ -1038,86 +730,26 @@
           </div>
         </div>
       </section><!--ind-->
-      <section class="section info">
-        <div class="contain">
-          <div class="info-w">
-            <div class="info-col-1-w">
-              <div class="info-col-it">
-                <div class="info-col-1-it-w">
-                  <div class="info-col-h-w-1"><div class="info-col-h">видео с наших стройплощадок</div></div>
-                  <div class="info-col-1-cont">
-                    <a href="#" class="info-col-1-img-w"><img src="img/info_1.jpg" />
-                      <span class="info-col-1-img-a"></span>
-                    </a>
-                    <div class="info-col-1-txt-1">
-                      Только у нас вы можете<br />
-                      онлайн следить<br />
-                      за стройкой Вашего дома!
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="info-col-it">
-                <div class="info-col-1-it-w">
-                  <div class="info-col-h-w-1"><div class="info-col-h">отзывы</div></div>
-                  <div class="info-col-1-cont">
-                    <a href="#" class="info-col-1-img-w"><img src="img/info_2.jpg" /></a>
-                    <div class="info-col-1-it-txt-w">
-                      <div class="info-col-txt-row">
-                        <div class="info-col-1-txt-2">05.05.2021</div>
-                        <a href="#" class="info-col-1-txt-3">Ирина</a>
-                      </div>
-                      <div class="info-col-1-txt-4">Спасибо менеджеру Сергею Богатикову и всем причастным к нашему строительству за помощь в реализации дома, о котором мы мечтали столько лет!</div>
-                    </div>
-                    <a href="#" class="info-col-1-it-a">Отзывы наших клиентов</a>
-                  </div>
-                </div>
-              </div>
-              <div class="info-col-it">
-                <div class="info-col-1-it-w">
-                  <div class="info-col-1-cont">
-                    <a href="#" class="info-col-1-img-w"><img src="img/info_3.jpg" /></a>
-                    <div class="info-col-h-w-2">
-                      <a href="#" class="info-col-h info-col-h-1">
-                        Выгодный кредит<br />
-                        от 9,5% годовых<br />
-                        и материнский капитал
-                      </a>
-                    </div>
-                    <a href="#" class="info-col-1-it-a">Об ипотеке</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="info-col-2">
-              <div class="info-col-2-w">
-                <div class="info-col-2-p-w">
-                  <p>
-                    Компания «Дома №1» была основана в 2015 году и прошла путь от небольшой бригады строителей до полноценной компании по строительству загородных домов, которая продолжает расти и развиваться.
-                  </p>
-                  <p>
-                    Мы понимаем, как важно оправдывать доверие наших клиентов, именно поэтому уделяем особое внимание подбору команды. Строительством домов занимаются люди, обладающие опытом и профессионализмом, что позволяет нам
-                    строить качественные, надежные и комфортные дома для постоянного проживания.
-                  </p>
-                  <div class="infobtn-jcc">
-                    <a href="#" class="btn w229">О компании</a>
-                  </div>
-                </div>            
-                <div class="info-col-2-cons">
-                  <div class="info-col-2-cons-txt">
-                    Планируете строить с использованием кредита <br />
-                    или материнского капитала?
-                  </div>
-                  <div class="info-btn-w">
-                    <a href="#" class="btn w229">Проконсультироваться</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
+
+
+
+  <section class="section const">
+    <div class="contain">
+      <div class="const-w">
+        <div class="const-txt-1">Технологии Строительства домов</div>
+        <div class="const-p-w">
+          <p>Строительство дома – это сложный и дорогостоящий процесс. Приобретение материалов, оплата монтажных работ и иные траты. Но современные технологии строительства частных домов создают возможности для менее затратного возведения теплого, надежного и красивого здания, не теряя в качествах проведенной работы.</p>
+          <p>Способов строительства множество, поэтому среди них необходимо найти подходящий метод по всем параметрам. Ведь как и старые так и новые технологии в строительстве частных домов имеют свои положительные и отрицательные стороны.</p>
+          <p><b>Каркасные дома.</b> Достаточно часто применяется в строительстве, так как метод очень прост в реализации. Кроме этого каркас позволяет создавать множество вариантов обустройства здания. По этой технологии строительства частных домов каркас устанавливается на свайный или бетонный фундамент – в зависимости от вида грунта и веса дома. Сам каркас делается из разных материалов – чаще всего это дерево, но также применяются легкие стальные тонкостенные конструкции (ЛСТК технология). Выбор материала делается в зависимости от условий, в которых будет возводиться дом и финансовых возможностей. Металлический каркас дороже деревянного, хотя если дерево правильно обработать, то по качеству и прочности скорее всего ощутимой разницы не будет. Главное – использовать качественный брус, который сможет служить долгое время, сохраняя свои свойства.</p>
+          <p><b>Дома из сип-панелей.</b> Дома, которые строятся из сип-панелей, требуют подбора качественных материалов. Под такими панелями подразумевается щитовой материал, состоящий из двух плит ДСП. Между ними пролагается тепло и гидроизоляция. Основной плюс такого вида панелей – осуществление монтажа на месте.</p>
+          <p><b>Каменные дома.</b> Велокс – новая технология строительства домов, которую применяют при строительстве жилых домов. Строительство заключается в применении несъемной опалубки, которая изготавливается из плит щепо-цементного типа. Толщина может быть разной, плиты соединяются цементным раствором, в который добавляется жидкое стекло. Такой раствор обладает влагоотталкивающими свойствами, что является несомненным плюсом для построения. Наружная плита обладает дополнительным утеплением и уплотнением, сделанным из пенополистирола.</p>
         </div>
-      </section>
-            <section class="section steps">  
+      </div>
+    </div>
+  </section>
+
+        <section class="section steps">  
         <div class="contain">
           <div class="step-w">
             <div class="step-h">
@@ -1167,7 +799,7 @@
           </div>
         </div>
       </section>
-         <section class="section built">
+     <section class="section built">
         <div class="contain">
           <h2 class="center">Построенные дома</h2>
           <div class="built-row">
@@ -1303,7 +935,24 @@
           </div>
         </div>
       </section>
-         <section class="section rev">
+
+
+  <div class="info-col-2-cons-2">
+    <div class="info-col-2-left">
+      <div class="contain">
+        <div class="info-col-2-cons-txt-2">
+          Планируете строить с использованием кредита <br>
+          или материнского капитала?
+        </div>
+        <div class="info-btn-w-2">
+          <a href="#" class="btn w229">Проконсультироваться</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+     <section class="section rev">
         <div class="contain">
           <h2 class="center">Отзывы наших клиентов</h2>
           <div class="rev-w">
@@ -1360,28 +1009,8 @@
             <a href="#" class="btn w229">Все отзывы</a>
           </div>    
         </div>
-      </section>    
-      <section class="section const">
-        <div class="contain">
-          <div class="const-w">
-            <div class="const-txt-1">Строительство домов под ключ</div>
-            <div class="const-p-w">
-              <p>
-                Компания «Дома №1» специализируется на строительстве недвижимости в Москве и Подмосковье, возведении домов и коттеджей комфорт класса под ключ и проведении комплексной работы для того, чтобы узаконить каждое ваше
-                действие и оградить от лишних забот.
-              </p>
-              <p>
-                Наши специалисты возьмут на себя все трудности, связанные с проектированием дома, его возведением и сдачей. Это сложный процесс, за который исполнитель несет ответственность на каждом этапе. Единственное, что требуется
-                от вас — это представление о том, каким должен быть ваш дом и из каких материалов вы предпочитаете его построить. Если эти вопросы оговорены, документы подписаны, то первый шаг к мечте уже сделан.
-              </p>
-              <p>
-                И, поверьте, это очень важный шаг!
-              </p>
-            </div>
-          </div>
-        </div>
       </section>
-         <div class="step">
+     <div class="step">
         <div class="contain">
           <div class="step-w">
             <div class="step-top">
@@ -1410,8 +1039,8 @@
           </div>
         </div>
       </div>
-    </main>
-      <footer class="footer">    
+</main>
+  <footer class="footer">    
     <div class="contain">
       <div class="foot-top">
         <div class="foot-top-col-1">
@@ -1462,10 +1091,10 @@
           </div>
     </div>    
   </footer>
-    <div class="overlay"></div>
-  </div>
-  <!--wrapper-->
-  <script src="js/jquery-3.4.1.min.js"></script>      
+<div class="overlay"></div>
+</div>
+<!--wrapper-->
+<script src="js/jquery-3.4.1.min.js"></script>      
 <script src="js/slick.js"></script>
 <script src="js/nouislider.js"></script>
 <script src="js/common.js"></script>
