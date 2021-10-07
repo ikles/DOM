@@ -470,7 +470,7 @@
                       </label>
                     </div>                    
 
-                    <div class="filter-item">
+                    <div class="filter-item filter-item-bathrooms">
                       <div class="filter-tit">Количество санузлов</div>
                       <div class="filter-2-labels">
                         <label class="filter-2-label">
@@ -789,10 +789,11 @@
       </div>
     </section>
 
-    @@include('var/_steps.html')
+    @@include('var/_steps.html',{
+      "class2":"steps2"
+    })
+
     @@include('var/_built.html')
-
-
     <div class="info-col-2-cons-2">
       <div class="info-col-2-left">
         <div class="contain">
