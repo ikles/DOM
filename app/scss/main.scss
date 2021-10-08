@@ -20,7 +20,6 @@ $font2: 'Ubuntu', sans-serif;
 @import "_grid.scss";
 
 
-
 a {
 	text-decoration: none;
 	&:hover {
@@ -185,14 +184,14 @@ body {
 }
 .teaser-label-blue {
 	background-color: #0078c1;
-		&:after {		
+	&:after {		
 		background-image: url('../img/label_b.png');
 	}
 }
 .teaser-label-white {
 	background-color: #FFF;
 	color: #e24b00;
-		&:after {		
+	&:after {		
 		background-image: url('../img/label_w.png');
 	}
 }
@@ -201,7 +200,7 @@ body {
 	font-weight: 900;
 	color: #ffffff;	
 	background-color: #e24b00;
-		&:after {		
+	&:after {		
 		background-image: url('../img/label_r.png');
 	}
 }
@@ -736,7 +735,7 @@ button {
 	display: flex;
 	align-items: center;
 	width: 100%;
-	        justify-content: space-between;
+	justify-content: space-between;
 	> li {
 		margin-right: 0px;
 		padding-right: 6px;
@@ -1098,7 +1097,7 @@ button {
 	background-position: center;
 	top: 326px;
 	@media (max-width : 1600px) {
-	top: calc(50% - 10px);
+		top: calc(50% - 10px);
 	}
 	li {
 		button {
@@ -1136,8 +1135,8 @@ button {
 	width: 100%;
 	z-index: 10;
 	@media (max-width : 1600px) {
-	top: 50%;
-	transform: translate(0, -50%);
+		top: 50%;
+		transform: translate(0, -50%);
 	}
 }
 
@@ -1223,7 +1222,7 @@ button {
 	margin-bottom: 19px;
 	height: 78px;
 	display: flex;	
-		        align-items: center;	
+	align-items: center;	
 	img {
 		max-height: 100%;
 		width: auto;
@@ -1385,7 +1384,7 @@ h2 {
 	width: 15px;
 	height: 15px;
 	background: transparent url("../img/close.svg") 0 0;	
-	        background-size: cover;
+	background-size: cover;
 }
 
 .filter-row {
@@ -1670,7 +1669,7 @@ input[type="text"].input-2 {
 	background-size: cover;	
 	display: flex;		
 	@media (max-width : 1600px) {
-	align-items: center;
+		align-items: center;
 	}
 }
 
@@ -1682,7 +1681,7 @@ input[type="text"].input-2 {
 	max-width: 466px;
 	padding-top: 83px;
 	@media (max-width : 1600px) {
-	padding-top: 0;
+		padding-top: 0;
 	}
 }
 
@@ -2283,7 +2282,7 @@ input[type="text"].step-form-input {
 			margin-right: 5px;
 			flex: none;
 			-webkit-border-radius: 3px;
-			        border-radius: 3px;
+			border-radius: 3px;
 		}
 		&:checked {
 			+ span {
@@ -2352,7 +2351,7 @@ input[type="text"].step-form-input {
 	display: flex;
 	margin-top: -17px;
 	@media (max-width : 1600px) {
-	margin-top: 0;
+		margin-top: 0;
 	}
 }
 
@@ -2423,11 +2422,11 @@ input[type="text"].step-form-input {
 .foot-soc-row {
 	display: flex;
 	align-items: center;	
-	        justify-content: flex-start;
-	        padding-left: 245px;
+	justify-content: flex-start;
+	padding-left: 245px;
 	@media (max-width : 1600px) {
-	justify-content: center;
-	padding-left: 0;
+		justify-content: center;
+		padding-left: 0;
 	}
 }
 
@@ -2533,7 +2532,7 @@ input[type="text"].step-form-input {
 	margin-top: 14px;
 	padding-left: 63px;
 	@media (max-width : 1600px) {
-	padding-left: 0;
+		padding-left: 0;
 	}
 }
 
@@ -2577,7 +2576,7 @@ input[type="text"].step-form-input {
 	margin-top: 55px;
 	margin-bottom: -5px;
 	@media (max-width : 1600px) {
-	margin-bottom: 0;
+		margin-bottom: 0;
 	}
 }
 
@@ -2704,42 +2703,200 @@ input[type="text"].step-form-input {
 
 
 .filter-open-span {
-    border-radius: 50%;
-    width: 16px;
-    height: 16px;
-    display: flex;
-    align-items: center;
-    border: 2px solid #dddddd;
-    margin-left: 10px;
-    flex: none;        
+	border-radius: 50%;
+	width: 16px;
+	height: 16px;
+	display: flex;
+	align-items: center;
+	border: 2px solid #dddddd;
+	margin-left: 10px;
+	flex: none;        
 }
 
 .filter-open-span:before {
-    content: "";
-    display: block;
-    width: 28px;
-    height: 2px;
-    background-color: #DDD;
-    transform: translate(100%, 0);
+	content: "";
+	display: block;
+	width: 28px;
+	height: 2px;
+	background-color: #DDD;
+	transform: translate(100%, 0);
 }
 
 .filter-open {
-    display: flex;
-    font-weight: 600;
-    color: #313130;
-    font-size: 17px;
-    align-items: center;
-    width: 87px;
-    margin-right: 10px;
-    &:hover {
-    	text-decoration: none;
-    }
+	display: flex;
+	font-weight: 600;
+	color: #313130;
+	font-size: 17px;
+	align-items: center;
+	width: 87px;
+	margin-right: 10px;
+	&:hover {
+		text-decoration: none;
+	}
 }
 
 .show-991 {
 	display: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.proj-card-gal-sl-it > img {
+	width: 150px;
+	height: 90px;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border-radius: 5%;
+	margin-right: 7px;
+}
+
+.project {
+	margin-top: 58px;
+}
+
+h1 {
+	padding-left: 33px;
+	margin-bottom: 33px;
+	font-family: Roboto;
+	font-size: 36px;
+	line-height: 1.2;
+	font-weight: 700;
+	color: #4b4f61;
+}
+
+
+
+.proj-w {
+}
+
+.proj-card {
+	display: flex;
+}
+
+.proj-card-l {
+	flex: 0 0 auto;
+	width: 880px;
+}
+
+.proj-card-img-w {
+	width: 880px;
+	height: 520px;
+}
+
+.proj-card-img {
+	width: 100%;
+	height: 100%;
+}
+
+.proj-card-gal {
+	background-color: rgb(221, 221, 221);
+	padding: 11px 23px;
+	display: flex;
+	align-items: center;
+}
+
+.proj-card-gal-sl {
+	padding-left: 22px;
+	display: flex;
+}
+
+.proj-card-gal-sl-it {
+	width: 150px;
+	height: 90px;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border-radius: 5%;
+	margin-right: 7px;
+}
+
+.proj-card-gal-sl-it-span {
+	margin-bottom: 10px;
+	width: 44px;
+	height: 43px;
+}
+
+.proj-card-gal-sl-it-img {
+	width: 100%;
+	height: 100%;
+}
+
+.proj-card-gal-sl-it-txt {
+	font-size: 14px;
+	text-decoration: underline;
+	color: rgb(153, 153, 153);
+}
+
+.proj-card-gal-arr {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 5px;
+	height: 9px;
+}
+
+.proj-char {
+	border: 1px solid rgb(223, 223, 223);
+	padding: 41px 10px 36px;
+	width: 100%;
+}
+
+.proj-char-w {
+	width: 100%;
+	justify-content: space-between;
+	display: flex;
+}
+
+.proj-char-it {
+	display: inline-flex;
+}
+
+.proj-char-img-w {
+	margin-right: 10px;
+}
+
+.proj-char-img {
+	width: 100%;
+	height: 100%;
+}
+
+.proj-char-txt-w {
+}
+
+.proj-char-txt-1 {
+	font-size: 14px;
+	color: rgb(153, 153, 153);
+	margin-bottom: 5px;
+}
+
+.proj-char-txt-2 {
+	font-family: Lato;
+	font-size: 18px;
+	color: rgb(40, 40, 40);
+	font-weight: 400;
+}
+
+.proj-card-r {
+	flex: 1 1 auto;
+}
 @import "_media.scss";
 @import "_hides.scss";
 @import "_after-styless";
