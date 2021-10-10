@@ -147,6 +147,33 @@ $( '#example4' ).sliderPro({
 
   });
 
+  
+
+  
+
+
+  var $div = $('<div/>').css({
+    position: 'absolute',
+    background: 'white',
+    border: '1px solid black',
+    padding: '10px',
+    zIndex: 999,
+    display: 'none'
+  }).appendTo('body');
+
+  $('.found-image-quest')
+  .mousemove(function(e){
+    $div.css({
+      top: e.pageY + 10 + 'px',
+      left: e.pageX + 10 + 'px'
+    });
+  })
+  .hover(function(){
+    $div.show().html('Text to display...');
+  }, function(){
+    $div.hide();
+  });
+
 
   $('.tabs-control-2 .tabs_control_link').click(function (e) {
     e.preventDefault();
