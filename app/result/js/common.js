@@ -116,28 +116,20 @@ $( '#example4' ).sliderPro({
   //$("#phone_1").mask("+7 (999) 999-99-99");
 
 //Add Inactive Class To All Accordion Headers
-$('.accordion-header').toggleClass('inactive-header');
+//$('.accordion-header').toggleClass('inactive-header');
 
   //Set The Accordion Content Width
-  var contentwidth = $('.accordion-header').width();
-  $('.accordion-content').css({'width' : contentwidth });
+  /*var contentwidth = $('.accordion-header').width();
+  $('.accordion-content').css({'width' : contentwidth });*/
   
   //Open The First Accordion Section When Page Loads
-  $('.accordion-header').first().toggleClass('active-header').toggleClass('inactive-header');
-  $('.accordion-content').first().slideDown().toggleClass('open-content');
+  /*$('.accordion-header').first().toggleClass('active-header').toggleClass('inactive-header');
+  $('.accordion-content').first().slideDown().toggleClass('open-content');*/
   
   // The Accordion Effect
   $('.accordion-header').click(function () {
-    if($(this).is('.inactive-header')) {
-      $('.active-header').toggleClass('active-header').toggleClass('inactive-header').next().slideToggle().toggleClass('open-content');
-      $(this).toggleClass('active-header').toggleClass('inactive-header');
-      $(this).next().slideToggle().toggleClass('open-content');
-    }
-    
-    else {
-      $(this).toggleClass('active-header').toggleClass('inactive-header');
-      $(this).next().slideToggle().toggleClass('open-content');
-    }
+    $(this).toggleClass('active-header');
+    $(this).next().slideToggle().toggleClass('open-content');
   });
 
   $('.tabs-control-1 .tabs_control_link').click(function (e) {
