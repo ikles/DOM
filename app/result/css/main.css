@@ -3102,8 +3102,7 @@ h1 {
   overflow: hidden;
   bottom: 0;
   margin-top: 0;
-  position: relative;
-  width: 100% !important; }
+  position: relative; }
   .sp-thumbnails-container.sp-bottom-thumbnails {
     margin-top: 0; }
   .sp-thumbnails-container.before {
@@ -3126,6 +3125,11 @@ h1 {
     width: 40px;
     height: 100%;
     background-color: #ddd; }
+  .sp-thumbnails-container .sp-thumbnail-arrow,
+  .sp-thumbnails-container .sp-fade-thumbnail-arrows {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important; }
 
 .sp-bottom-thumbnails .sp-thumbnail-container {
   margin-right: 7px; }
@@ -3211,9 +3215,7 @@ h1 {
   z-index: 20;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
-  opacity: 1 !important;
-  visibility: visible !important; }
+          transform: rotate(180deg); }
   .sp-thumbnail-arrow.sp-previous-thumbnail-arrow {
     left: 23px; }
   .sp-thumbnail-arrow.sp-next-thumbnail-arrow {

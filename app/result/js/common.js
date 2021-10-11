@@ -90,12 +90,16 @@ $( '#example4' ).sliderPro({
   arrows: true,
   buttons: false,
   fullScreen: false,
-  shuffle: true,
+  shuffle: false,
   smallSize: 500,
   mediumSize: 1000,
   largeSize: 3000,
+  loop: true,
   thumbnailArrows: true,
-  autoplay: false    
+  autoplay: false,
+  responsive: true,
+  startSlide: 0,
+  
 });
 
 

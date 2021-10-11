@@ -2996,12 +2996,12 @@ h1 {
 
 .sp-thumbnails-container {
 	background-color: #dddddd;
-	padding: 11px 50px;		
+	padding: 11px 50px;
 	overflow: hidden;	
 	bottom: 0;	
 	margin-top: 0;
 	position: relative;
-	width: 100% !important;
+	
 	&.sp-bottom-thumbnails {
 		margin-top: 0;
 	}
@@ -3027,6 +3027,12 @@ h1 {
 		height: 100%;
 		background-color: #ddd;
 	} 
+	.sp-thumbnail-arrow,
+	.sp-fade-thumbnail-arrows {
+		opacity: 1 !important;
+		visibility: visible !important;
+		display: block !important;
+	}
 }
 
 
@@ -3088,7 +3094,7 @@ h1 {
 
 .sp-slides-container {
 	overflow: hidden;
-	border-radius: 8px;
+	border-radius: 8px;	
 }
 
 .sp-slide {
@@ -3103,7 +3109,7 @@ h1 {
 	display: none;
 }
 
-.sp-grab {
+.sp-grab {	
 	&:hover,&:active,&:focus {
 		cursor: pointer !important;
 	}
@@ -3145,9 +3151,7 @@ h1 {
 	background: url("../img/arr_r_object.png") $nr center;	
 	display: block;
 	z-index: 20;
-	transform: rotate(180deg);
-	opacity: 1 !important;
-	visibility: visible !important;
+	transform: rotate(180deg);	
 	&.sp-previous-thumbnail-arrow {
 		left: 23px;
 	}
@@ -3813,7 +3817,7 @@ h5 {
 	background-color: #eeeeee;	
 	padding: 62px 0;
 	@media (min-width : 1200px) {
-	margin-top: 61px;
+		margin-top: 61px;
 	}	
 }
 
@@ -3944,7 +3948,7 @@ h5 {
 	border: 1px solid rgb(133, 173, 62);
 	border-top: none;
 	padding: 36px 30px 63px 34px;	
-	        border-radius: 0px 0px 5px 5px;
+	border-radius: 0px 0px 5px 5px;
 }
 
 .accordion-item-guar-w {
@@ -4070,7 +4074,7 @@ h5 {
 }
 
 .rev2 {
-margin-top: 111px;	
+	margin-top: 111px;	
 }
 
 .rev-2-w {
@@ -4089,7 +4093,7 @@ margin-top: 111px;
 		padding-left: 187px;
 	}
 	.step-form-row {		
-		        justify-content: flex-start;
+		justify-content: flex-start;
 	}
 }
 
