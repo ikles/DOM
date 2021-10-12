@@ -5,7 +5,7 @@
   <!--meta name="viewport" content="width=1200px"-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>2. Проект</title>  
+  <title>4. Попап</title>  
   @@include('var/_styless.html')
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,23 +43,17 @@
                 <div class="single-dev-gal-w single-dev-gal-w_2">
                   <div id="example4" class="slider-pro">              
                     <div class="sp-slides">
+                      <div class="sp-slide">
+                        <img class="sp-image" src="img/albina_big.jpg"/>
+                      </div>
+                      <div class="sp-slide">
+                        <img class="sp-image" src="img/albina_big.jpg"/>
+                      </div>
+                      <div class="sp-slide">
+                        <img class="sp-image" src="img/albina_big.jpg"/>
+                      </div>
                       <div class="sp-slide sp-slide-video">
                         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Vlyka3WzKKw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      </div>
-                      <div class="sp-slide">
-                        <img class="sp-image" src="img/albina_big.jpg"/>
-                      </div>
-                      <div class="sp-slide">
-                        <img class="sp-image" src="img/albina_big.jpg"/>
-                      </div>
-                      <div class="sp-slide">
-                        <img class="sp-image" src="img/albina_big.jpg"/>
-                      </div>
-                      <div class="sp-slide">
-                        <img class="sp-image" src="img/albina_big.jpg"/>
-                      </div>
-                      <div class="sp-slide">
-                        <img class="sp-image" src="img/albina_big.jpg"/>
                       </div>
                       <div class="sp-slide">
                         <img class="sp-image" src="img/albina_big.jpg"/>
@@ -75,11 +69,9 @@
                       </div>
                       <img class="sp-thumbnail" src="img/albina_min_2.jpg"/>
                       <img class="sp-thumbnail" src="img/albina_min_4.jpg"/>
-                      <img class="sp-thumbnail" src="img/albina_min_2.jpg"/>
+                      <img class="sp-thumbnail" src="img/albina_min_2.jpg"/>                      
                       <img class="sp-thumbnail" src="img/albina_min.jpg"/>
                       <img class="sp-thumbnail" src="img/albina_min_3.jpg"/>
-                      <img class="sp-thumbnail" src="img/albina_min_4.jpg"/>
-                      <img class="sp-thumbnail" src="img/albina_min.jpg"/>
                     </div> 
                   </div>
 
@@ -340,11 +332,7 @@
                     <span>Ввод комуникаций</span>
                   </div>
                   <div class="accordion-content">
-                    <div class="accordion-content-w">
-                      <div class="accordion-content-row">
-                        open
-                      </div>
-                    </div>
+                    open
                   </div><!--content-->
                 </div><!--item-->
 
@@ -487,11 +475,7 @@
                     <span>Наружная отделка фасада</span>
                   </div>
                   <div class="accordion-content">
-                    <div class="accordion-content-w">
-                      <div class="accordion-content-row">
-                        open
-                      </div>
-                    </div>
+                    open
                   </div><!--content-->
                 </div><!--item-->
 
@@ -560,11 +544,7 @@
                     <span>Поэтапная оплата</span>
                   </div>
                   <div class="accordion-content">
-                    <div class="accordion-content-w">
-                      <div class="accordion-content-row">
-                        open
-                      </div>
-                    </div>
+                    open
                   </div><!--content-->
                 </div><!--item-->
 
@@ -628,14 +608,14 @@
                             <div class="accordion-item-price-txt-1">4 060 000 ₽</div>
                             <div class="accordion-item-price-txt-2">3 600 000 ₽</div>
                           </div>
-                          <div class="accordion-item-pay accordion-item-pay-1">
+                          <div class="accordion-item-pay">
                             <div class="accordion-item-pay-img-w"><img src="img/guar_1.png" class="accordion-item-pay-img" /></div>
                             <div class="accordion-item-pay-txt-w">
                               <a href="#" class="accordion-item-pay-a">В кредит</a>
                               <div class="accordion-item-pay-txt">от 20 000 ₽/мес</div>
                             </div>
                           </div>
-                          <div class="accordion-item-pay accordion-item-pay-2">
+                          <div class="accordion-item-pay">
                             <div class="accordion-item-pay-img-w"><img src="img/guar_2.png" class="accordion-item-pay-img" /></div>
                             <div class="accordion-item-pay-txt-w">
                               <a href="#" class="accordion-item-pay-a">
@@ -666,11 +646,7 @@
                     <span>Внутренняя отделка стен</span>
                   </div>
                   <div class="accordion-content">
-                    <div class="accordion-content-w">
-<div class="accordion-content-row">
                     open
-                  </div>
-                  </div>
                   </div><!--content-->
                 </div><!--item-->
 
@@ -1005,7 +981,11 @@
 @@include('var/_step-form2.html')
 </main>
 @@include('var/_footer.html')
-<div class="overlay"></div>
+<div class="overlay" style="display: block;"></div>
+<div class="popup">
+  <div class="popup-txt-1">Спасибо за вашу заявку</div>
+  <div class="popup-txt-2">Наши специаоисты свяжутся с вами в ближайшее время</div>
+</div>
 </div>
 <!--wrapper-->
 @@include('var/_scripts.html')

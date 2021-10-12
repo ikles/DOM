@@ -3219,6 +3219,7 @@ h1 {
 
 .projgal-slider {
 	width: 100%;
+	max-width: 280px;
 	position: relative;
 	height: 166px;
 	margin-bottom: 27px;
@@ -3938,6 +3939,7 @@ h5 {
 	align-items: center;
 	justify-content: center;
 	margin-right: 20px;
+	flex: none;
 }
 
 
@@ -3979,6 +3981,7 @@ h5 {
 	font-size: 24px;
 	color: rgb(153, 153, 153);
 	margin-bottom: 5px;
+	text-decoration: line-through;
 }
 
 .accordion-item-price-txt-2 {
@@ -4098,14 +4101,6 @@ h5 {
 }
 
 
-/***************************/
-/***************************/
-/***************************/
-/***************************/
-/***************************/
-/***************************/
-/***************************/
-
 @media (min-width : 1200px) {
 	.accordion-content-found-w {
 		padding-bottom: 40px;
@@ -4130,6 +4125,35 @@ h5 {
 		padding-bottom: 29px;
 		padding-top: 41px;
 	}
+}
+
+
+.popup {
+	text-align: center;
+	display: flex;	
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 60px;
+	background-color: #FFF;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 30;
+	max-width: 560px;
+	width: 100%;
+}
+.popup-txt-1 {
+	font-size: 36px;
+	font-weight: 700;
+	color: #4B4F61;
+	margin-bottom: 17px;
+}
+.popup-txt-2 {
+	font-size: 14px;
+	font-weight: 700;
+	color: #85AD3E;
 }
 
 @import "_media.scss";

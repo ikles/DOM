@@ -58,7 +58,7 @@ $('.left-filter-close').click(function () {
 });
 
 $('.overlay').click(function () {
-  $('.catalog-col-filter, .overlay').hide();
+  $('.catalog-col-filter, .overlay, .popup').hide();
 })
 
 
