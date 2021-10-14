@@ -155,7 +155,7 @@ $( '#example4' ).sliderPro({
   
 
 
-  var $div = $('<div/>').css({
+/*  var $div = $('<div/>').css({
     position: 'absolute',
     background: 'white',
     border: '1px solid black',
@@ -175,24 +175,60 @@ $( '#example4' ).sliderPro({
     $div.show().html('Text to display...');
   }, function(){
     $div.hide();
-  });
+  });*/
+
+
+
 
 
   $('.tabs-control-2 .tabs_control_link').click(function (e) {
     e.preventDefault();
-
     var item = $(this).closest('.tabs-control-2 .tabs_control_item'),
     contentItem = $('.tabs_content-2 .tabs_content_item'),
     itemPosition = item.index();
-
     contentItem.eq(itemPosition)
     .add(item)
     .addClass('active')
     .siblings()
     .removeClass('active');
-
   });
 
+
+  $('.accordion-content-btn-w-1-js .accordion-content-btn').click(function (e) {
+    e.preventDefault();
+    var item = $(this).closest('.accordion-content-btn-w-1-js .accordion-control-item'),
+    contentItem = $('.accordion-content-content-1-js .accordion-content-item'),
+    itemPosition = item.index();
+    contentItem.eq(itemPosition)
+    .add(item)
+    .addClass('active')
+    .siblings()
+    .removeClass('active');
+  });
+
+  $('.accordion-content-btn-w-2-js .accordion-content-btn').click(function (e) {
+    e.preventDefault();
+    var item = $(this).closest('.accordion-content-btn-w-2-js .accordion-control-item'),
+    contentItem = $('.accordion-content-content-2-js .accordion-content-item'),
+    itemPosition = item.index();
+    contentItem.eq(itemPosition)
+    .add(item)
+    .addClass('active')
+    .siblings()
+    .removeClass('active');
+  });
+
+  $('.accordion-content-btn-w-3-js .accordion-content-btn').click(function (e) {
+    e.preventDefault();
+    var item = $(this).closest('.accordion-content-btn-w-3-js .accordion-control-item'),
+    contentItem = $('.accordion-content-content-3-js .accordion-content-item'),
+    itemPosition = item.index();
+    contentItem.eq(itemPosition)
+    .add(item)
+    .addClass('active')
+    .siblings()
+    .removeClass('active');
+  });
 
 
 

@@ -3723,11 +3723,38 @@ h3 {
 .accordion-content-btn-w {
 	display: flex;
 	margin-bottom: 54px;
+	li {
+		padding-left: 0;
+		margin-bottom: 0;
+		+ li {
+			margin-left: 15px;
+		}
+		&:before {
+			display: none;
+		}
+	}
 }
 
+.accordion-content-content {
+	> li {
+		padding-left: 0;
+		margin-bottom: 0;
+		display: none;
+		&:before {
+			display: none;
+		}
+		&.active {
+			display: block;
+		}
+	}	
+}
+
+.accordion-control-item {
+	width: 278px;
+}
 
 .accordion-content-btn {
-	width: 278px;
+	width: 100%;
 	height: 48px;
 	opacity: 0.8;
 	background-color: rgb(255, 255, 255);
@@ -3740,11 +3767,7 @@ h3 {
 	justify-content: center;
 	border-radius: 5%;
 	margin-right: 20px;
-	&.active {		
-		background-color: rgb(213, 225, 191);
-		border: 1px solid rgb(221, 221, 221);		
-		color: rgb(40, 40, 40);		
-	}
+
 	&:hover {
 		background-color: rgb(213, 225, 191);
 		border: 1px solid rgb(221, 221, 221);		
@@ -3752,7 +3775,20 @@ h3 {
 	}
 }
 
+.accordion-control-item {
+	&.active {		
+		a {
+			background-color: rgb(213, 225, 191);
+		border: 1px solid rgb(221, 221, 221);		
+		color: rgb(40, 40, 40);		
+		}
+	}
+}
+	
 
+.nobord {
+	border: none !important;
+}
 
 h5 {
 	font-size: 18px;
@@ -3835,6 +3871,7 @@ h5 {
 	position: absolute;	
 	cursor: pointer;
 	&:hover {
+		z-index: 100;
 		.found-image-quest-txt {
 			display: block;
 		}	
