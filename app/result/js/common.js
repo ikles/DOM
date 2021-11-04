@@ -47,6 +47,79 @@ $('.a-after').click(function (e) {
   $(this).parent().next('.top-open').slideToggle(); 
 });
 
+let fav_count = 0;
+
+/*
+$('.heart-label').click(function () {
+  if ( $(this).find('.heart-check').prop("checked")) {
+    console.log(fav_count++)
+  }
+  
+});*/
+
+
+/*
+function handleFormChange() {
+
+  const isCheckboxChecked = $('.popular-row input[type="checkbox"]').prop('checked');
+  
+  if (isCheckboxChecked) {
+    fav_count--;
+    console.log(fav_count)
+  } else {
+    fav_count++;
+    console.log(fav_count)
+  }
+  
+  
+}*/
+
+
+
+
+
+let i = 0;
+$('.teaser-it').each(function () {
+  let heart_check = $(this).find('.heart-check');
+  i++;
+  heart_check.attr("name", "heart-check-"+i);  
+});
+
+/*$('.heart-label').click(function () {
+  let chBox = $(this).find('.heart-check');
+  if ( chBox.prop('checked') ) {
+    fav_count++;
+    console.log(true);
+    console.log(fav_count++);
+  }
+  else {
+    fav_count--;
+    console.log(false);
+    console.log(fav_count--);
+  }
+});*/
+
+/*$(document).on('change', '.popular-row', function () {
+  $('.popular-row input[type="checkbox"]')
+    if ( $(this).prop('checked') ) {
+      ++fav_count;
+      console.log(fav_count);
+    }
+    else {
+      --fav_count;
+      console.log(fav_count);
+    }
+  
+  
+  });*/
+
+
+/*.show {}
+.hide {}
+.top-action-fav-count {}
+.top-action-heart-gray {}
+.top-action-heart-red {}*/
+
 
 $('.filter-open').click(function (e) {
   e.preventDefault();
@@ -65,14 +138,14 @@ $('.overlay').click(function () {
 $('.filter-btn-hide').click(function (e) {
   e.preventDefault();
   if ($(this).find('span').text() == 'Свернуть фильтр') {
-    $(this).find('span').text('Показать фильтр');
+    $(this).find('span').text('Еще фильтры');
   }
   else {
    $(this).find('span').text('Свернуть фильтр');
  }
  $(this).find('i').toggleClass('rot180');
  
- $('.filter-rows').slideToggle();
+ $('.filter-rows').toggleClass('open');
 });
 
 
@@ -236,7 +309,9 @@ $( '#example4' ).sliderPro({
     $('.sl').slick({  
      dots: false,
      infinite: true,
-     speed: 300,
+     speed: 1900,
+     cssEase: 'ease-in-out',
+     fade: true,
      slidesToShow: 1     
    }); 
   }
@@ -307,21 +382,46 @@ $( '#example4' ).sliderPro({
   */
 
 
+/*const priceSlider = document.querySelector('.price-filter__slider');
+if (priceSlider) {
+
+  let textFrom = priceSlider.getAttribute('data-from');
+  let textTo = priceSlider.getAttribute('data-to');
+
+  noUiSlider.create(priceSlider, {
+    start: [0, 200000],
+    connect: true,
+    tooltips: [wNumb({ decimals: 0, prefix: textFrom + ' ' }), wNumb({ decimals: 0, prefix: textTo + ' ' })],
+    range: {
+      'min': [0],
+      'max': [200000]
+    }
+  });*/
+
+
+
 //RANGE
 const priceSlider = document.querySelector('.price__range--1');
 if (priceSlider) {
 
-  //let textFrom = priceSlider.getAttribute('data-from');
+  let textFrom = priceSlider.getAttribute('data-from');
   let textTo = priceSlider.getAttribute('data-to');
 
   noUiSlider.create(priceSlider, {
-    start: [20, 250],
+    start: [10, 250],    
     connect: true,
-    //tooltips: [wNumb({ decimals: 0, prefix: '' + '' }), wNumb({ decimals: 0, prefix: '' + '' })],
+    step: 0.1,
+    tooltips: [wNumb({ decimals: 2, prefix: '' + '' }), wNumb({ decimals: 2, prefix: '' + '' })],
+    
     range: {
       'min': [10],
       'max': [500]
-    }    
+    },
+    format: wNumb({
+        decimals: 3,
+        thousand: '.',
+        suffix: ' (US $)'
+    })
   });
 
   

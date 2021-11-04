@@ -547,8 +547,7 @@ div[class*="-aic"] {
 	width: 50%;
 	padding-left: 18px;
 	padding-right: 18px;
-	flex: 1 1 auto;
-	align-items: center;
+	flex: 1 1 auto;	
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -558,7 +557,7 @@ div[class*="-aic"] {
 	display: block;
 	font-size: 18px;
 	font-weight: 700;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	letter-spacing: 0.025em;
 	color: rgb(40, 40, 40);
 }
@@ -695,7 +694,7 @@ button {
 		display: inline-block;
 		width: 9px;
 		height: 5px;
-		background-size: 9px;
+		background-size: 9px;		
 		margin-left: 33px;
 	}
 }
@@ -718,6 +717,26 @@ button {
 		background-color: #CFCFCF;	
 	}
 }
+
+
+.top-action-fav-count {	
+	position: absolute;
+	color: #FFF;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.top-action-fav {
+	position: relative;
+	.show {
+		display: block;
+	}
+	.hide {
+		display: none;
+	}
+}
+
+
 
 .top-actions {
 	display: flex;
@@ -1157,6 +1176,30 @@ button {
 
 
 
+
+
+@keyframes hideImage {
+   0% {
+      opacity: 1;
+   }
+
+   100% {
+      opacity: 0;
+   }
+}
+
+
+
+
+.sl {
+	.sl-it {		
+		
+	}	
+	.slick-active .sl-it {
+
+	}
+}
+
 .sl-it {	
 	width: 100%;
 	position: relative;	
@@ -1370,8 +1413,7 @@ button {
 .desc-txt-1 {
 	font-size: 24px;
 	line-height: 1.2;
-	font-weight: 700;
-	text-transform: uppercase;
+	font-weight: 700;	
 	color: rgb(40, 40, 40);
 	width: 100%;
 	margin-bottom: 20px;
@@ -1396,8 +1438,7 @@ button {
 h2 {
 	font-size: 36px;
 	line-height: 1.2;
-	font-weight: 700;
-	text-transform: uppercase;
+	font-weight: 700;	
 	color: #4b4f61;
 	margin-bottom: 40px;
 	&.lower {
@@ -1417,11 +1458,15 @@ h2 {
 	border: 1px solid #dddddd;
 	border-radius: 5px;	
 }
+.fullwidth-filter {
 .filter-rows { 
-	
-	&.fhide {
-
+	max-height: 150px;
+	overflow: hidden;	
+	        transition: 0.8s ease-in-out;
+	&.open {
+max-height: 800px;
 	} 
+}
 }
 
 .left-filter-close {
@@ -1499,7 +1544,6 @@ h2 {
 .filter-label {
 	cursor: pointer;
 	display: flex;
-
 	align-items: center;
 	input[type="checkbox"], input[type="radio"] {
 		display: none;
@@ -1523,6 +1567,11 @@ h2 {
 	&:not(:last-child) {
 		margin-bottom: 7px;
 	}
+	&:hover {
+		.filter-check-span {
+			border: 3px solid #8abe5c;
+		}
+	}
 }
 
 .filter-label-txt {
@@ -1535,21 +1584,20 @@ h2 {
 .filter-2-label {
 	cursor: pointer;
 	display: flex;
-
 	align-items: center;
 	margin-bottom: 10px;
 	&:hover {
 		input[type="checkbox"] + span, input[type="radio"] + span {
 			background-color: #85ad3e;
-			border: 1px solid #dddddd;
-			color: #FFF;
+			background-color: #fff;
+			border: 3px solid #85ad3e;			
 		}	
 	}
 	input[type="checkbox"], input[type="radio"] {
 		display: none;
 		+ span {
 			width: 50px;
-			height: 50px;
+			height: 40px;
 			background-color: #ffffff;
 			border: 1px solid #dddddd;
 			display: flex;
@@ -1618,6 +1666,7 @@ input[type="text"].input-2 {
 	padding: 9px;
 	width: 100%;
 	height: 44px;
+	height: 40px;
 	background-color: #ffffff;	
 	font-size: 14px;
 	font-weight: 400;
@@ -1634,19 +1683,32 @@ input[type="text"].input-2 {
 	position: absolute;
 	bottom: 0;
 	left: 0;
+	bottom: -19px;
 	width: 100%;
 	margin-bottom: 0;
 }
 .price__inputs {
 	position: relative;
 	background-color: #FFF;
+	background: none;
 	display: flex;	
 	justify-content: space-between;
 	border: 1px solid #dddddd;
+	border: none;
 	height: 50px;
-	border-radius: 3px;
+	height: 40px;
+	&:after {
+		content: "-";
+		display: block;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
 	> input[type="text"] {
 		width: calc(50% - 10px);
+		border: 1px solid #dddddd;
+		border-radius: 3px;
 	}
 }
 
@@ -1669,11 +1731,11 @@ input[type="text"].input-2 {
 }
 
 .noUi-handle::after {
-	width: 11px;
-	height: 11px;
+	width: 10px;
+	height: 10px;
 	background-color: #8abe5c;
-	left: 5px;
-	top: 5px;
+	left: 6px;
+	top: 6px;
 }
 
 .noUi-handle {
@@ -1688,6 +1750,7 @@ input[type="text"].input-2 {
 	display: flex;	
 	justify-content: space-between;
 	margin-top: 9px;
+	margin-top: 32px;
 }
 .price__caption {
 	font-size: 12px;
@@ -1745,8 +1808,7 @@ input[type="text"].input-2 {
 .ind-txt-1 {
 	font-size: 48px;
 	line-height: 1.3;
-	font-weight: 700;
-	text-transform: uppercase;
+	font-weight: 700;	
 	color: rgb(75, 79, 97);
 	width: 100%;
 	margin-bottom: 17px;
@@ -1763,7 +1825,6 @@ input[type="text"].input-2 {
 	font-size: 24px;
 	line-height: 1.2;
 	font-weight: 500;	
-	text-transform: uppercase;
 	color: rgb(153, 153, 153);
 	margin-bottom: 35px;
 }
@@ -1841,8 +1902,7 @@ input[type="text"].input-2 {
 .info-col-h {
 	font-size: 18px;
 	line-height: 1.2;
-	font-weight: 700;
-	text-transform: uppercase;
+	font-weight: 700;	
 	color: rgb(40, 40, 40);
 	text-align: center;
 	margin-bottom: 0px;
@@ -1993,8 +2053,7 @@ input[type="text"].input-2 {
 	text-align: center;
 	font-size: 24px;
 	line-height: 1.2;
-	font-weight: 700;
-	text-transform: uppercase;
+	font-weight: 700;	
 	color: rgb(75, 79, 97);
 	margin-bottom: 19px;
 }
@@ -2021,15 +2080,13 @@ input[type="text"].input-2 {
 }
 
 .step-h-txt-1 {
-	font-size: 100px;
-	text-transform: uppercase;
+	font-size: 100px;	
 	color: rgb(75, 79, 97);
 	text-align: center;
 	margin-bottom: 15px;
 }
 
-.step-h-txt-2 {
-	text-transform: uppercase;
+.step-h-txt-2 {	
 	color: rgb(75, 79, 97);
 	font-size: 36px;
 	text-align: center;
@@ -2098,8 +2155,7 @@ input[type="text"].input-2 {
 	text-align: center;
 	font-size: 18px;
 	line-height: 1.2;
-	font-weight: 700;
-	text-transform: uppercase;
+	font-weight: 700;	
 	color: rgb(255, 255, 255);
 	position: relative;
 	z-index: 2;
@@ -2246,8 +2302,7 @@ input[type="text"].input-2 {
 
 .const-txt-1 {
 	font-size: 24px;
-	font-weight: 700;
-	text-transform: uppercase;
+	font-weight: 700;	
 	color: rgb(40, 40, 40);
 	margin-bottom: 29px;
 }
@@ -2286,13 +2341,14 @@ input[type="text"].input-2 {
 
 .step-top-txt-1 {	
 	margin-bottom: 10px;
-	text-align: center;
+	text-align: center;	
+	text-transform: none;
 }
 
 .step-top-txt-2 {
 	font-size: 14px;
 	color: rgb(133, 173, 62);
-	text-transform: uppercase;
+	
 	text-align: center;
 	font-weight: 700;
 }
@@ -2476,8 +2532,7 @@ input[type="text"].step-form-input {
 
 	a {
 		font-size: 14px;
-		color: rgb(255, 255, 255);
-		text-transform: uppercase;
+		color: rgb(255, 255, 255);		
 	}
 }
 
@@ -2576,8 +2631,7 @@ input[type="text"].step-form-input {
 	text-align: left;
 	max-width: 591px;
 	line-height: 1.7;
-	font-size: 36px;
-	text-transform: uppercase;
+	font-size: 36px;	
 	font-weight: 700;
 }	
 

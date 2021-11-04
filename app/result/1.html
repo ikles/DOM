@@ -44,7 +44,11 @@
 
             <div class="top-col-4"><a href="" class="btn">Заказать звонок</a></div>
             <div class="top-actions">
-              <a href="#" class="top-action"><img src="img/heart_red.png" /></a>
+              <a href="#" class="top-action top-action-fav">
+                <img class="top-action-heart-gray show" src="img/heart_gray_top.png" />
+                <span class="hide top-action-fav-count">1</span>
+                <img class="top-action-heart-red hide" src="img/heart_red.png" />
+              </a>
               <a href="#" class="top-action"><img src="img/user.png" /></a>
               <a href="#" class="top-action"><img src="img/search.png" /></a>
             </div>
@@ -279,7 +283,7 @@
 
       <section class="catalog section">
         <div class="contain">
-          <h2 class="center">Каталог проектов</h2>
+          <h2>Каталог проектов</h2>
           <div class="catalog-w">
             <div class="catalog-it-w">
   <div class="catalog-it catalog-it-1">
@@ -291,7 +295,7 @@
   </div>
   <div class="catalog-it catalog-it-2">
     <div class="catalog-desc">
-      <div class="desc-txt-1">дома из <span>sip-панелей</span></div>
+      <div class="desc-txt-1">Дома из <span>СИП-панелей</span></div>
       <div class="desc-txt-2">от 27 000 ₽/м2</div>                  
     </div>
     <a href="#" class="btn catalog-btn">Проекты домов</a>
@@ -305,7 +309,7 @@
   </div>
 </div>
           </div><!--catalog-w-->
-          <div class="filter">
+          <div class="filter fullwidth-filter">
             <form class="filter-form">
               <div class="filter-rows">
                 <div class="filter-row">
@@ -691,7 +695,7 @@
                 </div><!--filter-row-->
               </div>
               <div class="filter-buttons">
-                <a href="#" class="filter-btn-hide btn-o"><span>Свернуть фильтр</span><i></i></a>
+                <a href="#" class="filter-btn-hide btn-o"><span>Еще фильтры</span><i class="rot180"></i></a>
                 <a href="#" class="filter-btn btn">Показать 34 проекта</a>
               </div>
             </form>
@@ -703,7 +707,7 @@
 
       <div class="popular">
         <div class="contain">
-          <h2 class="center">Популярные проекты домов</h2>
+          <h2>Популярные проекты домов</h2>
           <div class="popular-row teasers-row row10">
             <div class="popular-col teasers-col col-25">
               <div class="teaser-it">
@@ -1046,7 +1050,7 @@
             <div class="info-col-1-w">
               <div class="info-col-it">
                 <div class="info-col-1-it-w">
-                  <div class="info-col-h-w-1"><div class="info-col-h">видео с наших стройплощадок</div></div>
+                  <div class="info-col-h-w-1"><div class="info-col-h">Видео с наших стройплощадок</div></div>
                   <div class="info-col-1-cont">
                     <a href="#" class="info-col-1-img-w"><img src="img/info_1.jpg" />
                       <span class="info-col-1-img-a"></span>
@@ -1061,7 +1065,7 @@
               </div>
               <div class="info-col-it">
                 <div class="info-col-1-it-w">
-                  <div class="info-col-h-w-1 info-col-h-rev"><div class="info-col-h">отзывы</div></div>
+                  <div class="info-col-h-w-1 info-col-h-rev"><div class="info-col-h">Отзывы</div></div>
                   <div class="info-col-1-cont">
                     <a href="#" class="info-col-1-img-w"><img src="img/info_2.jpg" /></a>
                     <div class="info-col-1-it-txt-w">
@@ -1171,7 +1175,7 @@
       </section>
          <section class="section built">
         <div class="contain">
-          <h2 class="center">Построенные дома</h2>
+          <h2>Построенные дома</h2>
           <div class="built-row">
             <div class="built-col">
               <div class="teaser-it-2">
@@ -1307,7 +1311,7 @@
       </section>
          <section class="section rev">
         <div class="contain">
-          <h2 class="center">Отзывы наших клиентов</h2>
+          <h2>Отзывы наших клиентов</h2>
           <div class="rev-w">
             <div class="rev-it">
               <div class="rev-it-txt-a">
@@ -1387,7 +1391,7 @@
         <div class="contain">
           <div class="step-w">
             <div class="step-top">
-              <h2 class="step-top-txt-1">сделайте первый шаг к реализации мечты
+              <h2 class="step-top-txt-1">Сделайте первый шаг к реализации мечты
               </h2>
               <div class="step-top-txt-2">Оставьте заявку, закажите бесплатную консультацию</div>
             </div>
@@ -1431,14 +1435,14 @@
               <li><a href="#">Дома из СИП панелей</a></li>
             </ul>
             <ul class="w-foot-top-mn-ul">
-              <li><a href="#">АКЦИИ</a></li>
+              <li><a href="#">Акции</a></li>
               <li><a href="#">Построенные дома</a></li>
-              <li><a href="#">О КОМПАНИИ</a></li>
+              <li><a href="#">О компании</a></li>
             </ul>
             <ul class="w-foot-top-mn-ul">
               <li><a href="#">Отделка</a></li>
-              <li><a href="#">НАШЕ ПРОИЗВОДСТВО</a></li>
-              <li><a href="#">КОНТАКТЫ</a></li>              
+              <li><a href="#">Нане производство</a></li>
+              <li><a href="#">Контакты</a></li>              
             </ul>
           </div>
           <div class="foot-soc-row">
@@ -1467,10 +1471,11 @@
     <div class="overlay"></div>    
   </div>
   <!--wrapper-->
-  <script src="js/jquery-3.4.1.min.js"></script>      
+  <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/jquery-ui.js"></script>      
 <script src="js/slick.js"></script>
 <script src="js/jquery.sliderPro.min.js"></script>
+<script src="js/wNumb.min.js"></script>
 <script src="js/nouislider.js"></script>
 <script src="js/common.js"></script>
 

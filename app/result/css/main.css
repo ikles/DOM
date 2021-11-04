@@ -949,9 +949,6 @@ div[class*="-aic"] {
   -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -966,7 +963,7 @@ div[class*="-aic"] {
   display: block;
   font-size: 18px;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 0.025em;
   color: #282828; }
 
@@ -1138,6 +1135,19 @@ button {
     margin-left: 10px; }
   .top-action:hover {
     background-color: #CFCFCF; }
+
+.top-action-fav-count {
+  position: absolute;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 700; }
+
+.top-action-fav {
+  position: relative; }
+  .top-action-fav .show {
+    display: block; }
+  .top-action-fav .hide {
+    display: none; }
 
 .top-actions {
   display: -webkit-flex;
@@ -1465,6 +1475,18 @@ button {
       -ms-transform: rotate(180deg);
           transform: rotate(180deg); }
 
+@-webkit-keyframes hideImage {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes hideImage {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
 .sl-it {
   width: 100%;
   position: relative;
@@ -1657,7 +1679,6 @@ button {
   font-size: 24px;
   line-height: 1.2;
   font-weight: 700;
-  text-transform: uppercase;
   color: #282828;
   width: 100%;
   margin-bottom: 20px; }
@@ -1678,7 +1699,6 @@ h2 {
   font-size: 36px;
   line-height: 1.2;
   font-weight: 700;
-  text-transform: uppercase;
   color: #4b4f61;
   margin-bottom: 40px; }
   h2.lower {
@@ -1692,6 +1712,13 @@ h2 {
   background-color: #ededef;
   border: 1px solid #dddddd;
   border-radius: 5px; }
+
+.fullwidth-filter .filter-rows {
+  max-height: 150px;
+  overflow: hidden;
+  transition: 0.8s ease-in-out; }
+  .fullwidth-filter .filter-rows.open {
+    max-height: 800px; }
 
 .left-filter-close {
   display: block;
@@ -1785,6 +1812,8 @@ h2 {
       background-position: center; }
   .filter-label:not(:last-child) {
     margin-bottom: 7px; }
+  .filter-label:hover .filter-check-span {
+    border: 3px solid #8abe5c; }
 
 .filter-label-txt {
   font-size: 12px;
@@ -1802,13 +1831,13 @@ h2 {
   margin-bottom: 10px; }
   .filter-2-label:hover input[type="checkbox"] + span, .filter-2-label:hover input[type="radio"] + span {
     background-color: #85ad3e;
-    border: 1px solid #dddddd;
-    color: #FFF; }
+    background-color: #fff;
+    border: 3px solid #85ad3e; }
   .filter-2-label input[type="checkbox"], .filter-2-label input[type="radio"] {
     display: none; }
     .filter-2-label input[type="checkbox"] + span, .filter-2-label input[type="radio"] + span {
       width: 50px;
-      height: 50px;
+      height: 40px;
       background-color: #ffffff;
       border: 1px solid #dddddd;
       display: -webkit-flex;
@@ -1879,6 +1908,7 @@ input[type="text"].input-2 {
   padding: 9px;
   width: 100%;
   height: 44px;
+  height: 40px;
   background-color: #ffffff;
   font-size: 14px;
   font-weight: 400;
@@ -1890,12 +1920,14 @@ input[type="text"].input-2 {
   position: absolute;
   bottom: 0;
   left: 0;
+  bottom: -19px;
   width: 100%;
   margin-bottom: 0; }
 
 .price__inputs {
   position: relative;
   background-color: #FFF;
+  background: none;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1903,10 +1935,22 @@ input[type="text"].input-2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   border: 1px solid #dddddd;
+  border: none;
   height: 50px;
-  border-radius: 3px; }
+  height: 40px; }
+  .price__inputs:after {
+    content: "-";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
   .price__inputs > input[type="text"] {
-    width: calc(50% - 10px); }
+    width: calc(50% - 10px);
+    border: 1px solid #dddddd;
+    border-radius: 3px; }
 
 .noUi-base {
   height: 6px;
@@ -1922,11 +1966,11 @@ input[type="text"].input-2 {
   background-color: #8abe5c; }
 
 .noUi-handle::after {
-  width: 11px;
-  height: 11px;
+  width: 10px;
+  height: 10px;
   background-color: #8abe5c;
-  left: 5px;
-  top: 5px; }
+  left: 6px;
+  top: 6px; }
 
 .noUi-handle {
   width: 26px;
@@ -1942,7 +1986,8 @@ input[type="text"].input-2 {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 9px; }
+  margin-top: 9px;
+  margin-top: 32px; }
 
 .price__caption {
   font-size: 12px;
@@ -1990,7 +2035,6 @@ input[type="text"].input-2 {
   font-size: 48px;
   line-height: 1.3;
   font-weight: 700;
-  text-transform: uppercase;
   color: #4b4f61;
   width: 100%;
   margin-bottom: 17px; }
@@ -2005,7 +2049,6 @@ input[type="text"].input-2 {
   font-size: 24px;
   line-height: 1.2;
   font-weight: 500;
-  text-transform: uppercase;
   color: #999999;
   margin-bottom: 35px; }
 
@@ -2070,7 +2113,6 @@ input[type="text"].input-2 {
   font-size: 18px;
   line-height: 1.2;
   font-weight: 700;
-  text-transform: uppercase;
   color: #282828;
   text-align: center;
   margin-bottom: 0px;
@@ -2220,7 +2262,6 @@ input[type="text"].input-2 {
   font-size: 24px;
   line-height: 1.2;
   font-weight: 700;
-  text-transform: uppercase;
   color: #4b4f61;
   margin-bottom: 19px; }
 
@@ -2242,13 +2283,11 @@ input[type="text"].input-2 {
 
 .step-h-txt-1 {
   font-size: 100px;
-  text-transform: uppercase;
   color: #4b4f61;
   text-align: center;
   margin-bottom: 15px; }
 
 .step-h-txt-2 {
-  text-transform: uppercase;
   color: #4b4f61;
   font-size: 36px;
   text-align: center; }
@@ -2324,7 +2363,6 @@ input[type="text"].input-2 {
   font-size: 18px;
   line-height: 1.2;
   font-weight: 700;
-  text-transform: uppercase;
   color: white;
   position: relative;
   z-index: 2;
@@ -2436,7 +2474,6 @@ input[type="text"].input-2 {
 .const-txt-1 {
   font-size: 24px;
   font-weight: 700;
-  text-transform: uppercase;
   color: #282828;
   margin-bottom: 29px; }
 
@@ -2461,12 +2498,12 @@ input[type="text"].input-2 {
 
 .step-top-txt-1 {
   margin-bottom: 10px;
-  text-align: center; }
+  text-align: center;
+  text-transform: none; }
 
 .step-top-txt-2 {
   font-size: 14px;
   color: #85ad3e;
-  text-transform: uppercase;
   text-align: center;
   font-weight: 700; }
 
@@ -2605,8 +2642,7 @@ input[type="text"].input-2 {
 
 .w-foot-top-mn-ul a {
   font-size: 14px;
-  color: white;
-  text-transform: uppercase; }
+  color: white; }
 
 .foot-soc-row {
   display: -webkit-flex;
@@ -2708,7 +2744,6 @@ input[type="text"].input-2 {
   max-width: 591px;
   line-height: 1.7;
   font-size: 36px;
-  text-transform: uppercase;
   font-weight: 700; }
 
 .info-btn-w-2 {
