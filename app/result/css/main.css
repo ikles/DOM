@@ -785,12 +785,12 @@ div[class*="-aic"] {
   width: 50%; }
 
 .teaser-info-cap {
-  font-size: 14px;
+  font-size: 12px;
   color: #999999;
   margin-bottom: 3px; }
 
 .teaser-info-name {
-  font-size: 18px;
+  font-size: 16px;
   color: #282828;
   display: block; }
 
@@ -807,13 +807,13 @@ div[class*="-aic"] {
           align-items: flex-end; }
 
 .teaser-info-old-price {
-  font-size: 14px;
+  font-size: 12px;
   color: #999999;
   margin-bottom: 5px;
   text-decoration: line-through; }
 
 .teaser-info-price {
-  font-size: 18px;
+  font-size: 14px;
   color: #282828;
   font-weight: 700; }
 
@@ -1962,8 +1962,14 @@ h2 {
       background-position: center; }
   .filter-label:not(:last-child) {
     margin-bottom: 7px; }
-  .filter-label:hover .filter-check-span {
+  .filter-label input[type="checkbox"]:disabled + span, .filter-label input[type="radio"]:disabled + span {
+    background: none; }
+    .filter-label input[type="checkbox"]:disabled + span + span, .filter-label input[type="radio"]:disabled + span + span {
+      color: #9a9a9a; }
+  .filter-label:hover input[type="checkbox"] + span, .filter-label:hover input[type="radio"] + span {
     border: 3px solid #8abe5c; }
+  .filter-label:hover input[type="checkbox"]:disabled + span, .filter-label:hover input[type="radio"]:disabled + span {
+    border: 1px solid #dddddd; }
 
 .filter-label-txt {
   font-size: 12px;
@@ -3058,10 +3064,8 @@ input[type="text"].input-2 {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  .filter-item-2 .filter-label:nth-child(odd) {
-    width: 52%; }
-  .filter-item-2 .filter-label:nth-child(even) {
-    width: 48%; }
+  .filter-item-2 .filter-label {
+    width: 100%; }
 
 .filter-item-bathrooms {
   margin-bottom: 0; }

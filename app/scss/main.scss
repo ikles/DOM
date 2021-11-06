@@ -388,13 +388,13 @@ div[class*="-aic"] {
 }
 
 .teaser-info-cap {
-	font-size: 14px;
+	font-size: 12px;
 	color: rgb(153, 153, 153);
 	margin-bottom: 3px;
 }
 
 .teaser-info-name {
-	font-size: 18px;
+	font-size: 16px;
 	color: #282828;
 	display: block;
 }
@@ -407,14 +407,14 @@ div[class*="-aic"] {
 }
 
 .teaser-info-old-price {
-	font-size: 14px;
+	font-size: 12px;
 	color: rgb(153, 153, 153);
 	margin-bottom: 5px;
 	text-decoration: line-through;
 }
 
 .teaser-info-price {
-	font-size: 18px;
+	font-size: 14px;
 	color: rgb(40, 40, 40);
 	font-weight: 700;
 }
@@ -1730,9 +1730,18 @@ h2 {
 	&:not(:last-child) {
 		margin-bottom: 7px;
 	}
+	input[type="checkbox"]:disabled + span, input[type="radio"]:disabled + span {
+		background: none;		
+			+ span {
+				color: #9a9a9a;
+			}		
+	}
 	&:hover {
-		.filter-check-span {
+		input[type="checkbox"] + span, input[type="radio"] + span {
 			border: 3px solid #8abe5c;
+		}		
+		input[type="checkbox"]:disabled + span, input[type="radio"]:disabled + span {
+			border: 1px solid #dddddd;			
 		}
 	}
 }
@@ -2973,11 +2982,12 @@ input[type="text"].step-form-input {
 	flex-wrap: wrap;	
 	justify-content: space-between;
 	.filter-label {		
+		width: 100%;
 		&:nth-child(odd) {
-			width: 52%;
+			
 		}
 		&:nth-child(even) {
-			width: 48%;
+			
 		}
 	}
 }
