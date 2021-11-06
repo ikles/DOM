@@ -12,6 +12,7 @@
 			background-color: #FFF;
 			opacity: 0.6;
 			z-index: 20;
+			display: none;
 		} 
 		&:after {
 			content: "";
@@ -24,6 +25,7 @@
 			background-color: #FFF;
 			opacity: 0.6;
 			z-index: 20;
+			display: none;
 		}  
 	}
 }
