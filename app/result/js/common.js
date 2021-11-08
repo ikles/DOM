@@ -133,7 +133,7 @@ $(window).scroll(function(){
   if (wt + wh >= et || wh + wt == dh || eh + et < wh){
     console.log('Элемент показан');
   }*/
-  if (wt > 300) {
+  if (wt > 20) {
     $('.header').addClass('_fixed');
   }
   else {
@@ -142,7 +142,7 @@ $(window).scroll(function(){
 });
 
 $('.top-fixed-mnu').click(function () {  
-  $('.header._fixed .top-mnu-row').slideToggle();
+  $('.header._fixed .top-mnu-row').toggleClass('open');
 })
 
 
@@ -391,7 +391,21 @@ $( '#example4' ).sliderPro({
   $('.price-sort.active').click(function (e) {
     e.preventDefault();
     $(this).toggleClass('rot');
-  })
+  });
+
+
+
+/*  $("#calc-width").slider({
+    range: "min",
+    value: 1.25,
+    min: 0,
+    max: 4,
+    step: 0.25,
+    slide: function( event, ui ) {
+      $( "#amount-width" ).val( ui.value );
+    }
+  });
+  $( "#amount-width" ).val( $( "#calc-width" ).slider( "value" ));*/
 
 /*
   infinite: true,
@@ -426,6 +440,16 @@ if (priceSlider) {
 
 
 //RANGE
+if ($('.thumb-item').length) {
+  $(".thumb-item").brazzersCarousel();  
+}
+
+
+
+function divideNumberByPieces(x, delimiter) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, delimiter || " ");
+}
+
 const priceSlider = document.querySelector('.price__range--1');
 if (priceSlider) {
 
@@ -435,33 +459,32 @@ if (priceSlider) {
   noUiSlider.create(priceSlider, {
     start: [10, 250],    
     connect: true,
-    step: 0.1,
-    tooltips: [wNumb({ decimals: 2, prefix: '' + '' }), wNumb({ decimals: 2, prefix: '' + '' })],
-    
+    step: 0.01,
+    /*tooltips: [wNumb({ decimals: 2, prefix: '' + '' }), wNumb({ decimals: 2, prefix: '' + '' })],*/    
     range: {
       'min': [10],
       'max': [500]
     },
-    format: wNumb({
-      decimals: 3,
-      thousand: '.',
+    /*format: wNumb({
+      decimals: 0,
+      thousand: ',',
       suffix: ' (US $)'
-    })
+    })*/
   });
 
-  
+
   const priceStart = document.getElementById('price-start');
   const priceEnd = document.getElementById('price-end');
   priceStart.addEventListener('change', setPriceValues);
   priceEnd.addEventListener('change', setPriceValues);
-  
+
 
 
 
 //Значения из ползунков в инпуты
 priceSlider.noUiSlider.on('update', function(values, handle) {
-  priceStart.value = +Math.round(priceSlider.noUiSlider.get()[0]);
-  priceEnd.value = +Math.round(priceSlider.noUiSlider.get()[1]);
+  priceStart.value = Number(priceSlider.noUiSlider.get()[0]);
+  priceEnd.value = Number(priceSlider.noUiSlider.get()[1]);
 });
 
 
@@ -503,21 +526,22 @@ if (priceSlider2) {
   
   const priceStart2 = document.getElementById('price-start2');
   const priceEnd2 = document.getElementById('price-end2');
-  priceStart2.addEventListener('change', setPriceValues);
-  priceEnd2.addEventListener('change', setPriceValues);
+  priceStart2.addEventListener('change', setPriceValues2);
+  priceEnd2.addEventListener('change', setPriceValues2);
   
+
 
 
 
 //Значения из ползунков в инпуты
 priceSlider2.noUiSlider.on('update', function(values, handle) {
-  priceStart2.value = +Math.round(priceSlider2.noUiSlider.get()[0]);
-  priceEnd2.value = +Math.round(priceSlider2.noUiSlider.get()[1]);
+  priceStart2.value = divideNumberByPieces(+Math.round(priceSlider2.noUiSlider.get()[0]));
+  priceEnd2.value = divideNumberByPieces(+Math.round(priceSlider2.noUiSlider.get()[1]));
 });
 
 
 
-function setPriceValues() {
+function setPriceValues2() {
   let priceStartValue2;
   let priceEndValue2;
   if (priceStart2.value != '') {
@@ -527,8 +551,6 @@ function setPriceValues() {
     priceEndValue2 = priceEnd2.value;
   }
   priceSlider2.noUiSlider.set([priceStartValue2, priceEndValue2]);
-
-
   } //spV
 }// if priceSlider
 
